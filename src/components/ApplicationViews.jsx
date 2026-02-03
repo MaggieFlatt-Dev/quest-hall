@@ -1,3 +1,3 @@
 export const ApplicationViews = () => {
-  return <div className="text-red-500">Quest Hall</div>;
+  return <div className="text-gold">Quest Hall</div>;
 };

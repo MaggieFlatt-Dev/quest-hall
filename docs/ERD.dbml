@@ -1,0 +1,47 @@
+Table users {
+    id int [pk]
+    firstName varchar
+    lastName varchar
+    username varchar
+    email varchar
+    tavernId int [ref: > taverns.id]
+}
+
+Table games {
+    id int [pk]
+    name varchar
+    imageUrl varchar
+    description varchar
+    gameType varchar
+    createdByUserId int [ref: > users.id]
+}
+
+Table usersFavorites {
+    id int [pk]
+    userId int [ref: > users.id]
+    gameId int [ref: > games.id]
+}
+
+Table platforms {
+    id int [pk]
+    name varchar
+    
+}
+
+Table gamesPlatforms {
+    id int [pk]
+    gameId int [ref: > games.id]
+    platformId int [ref: > platforms.id]
+}
+
+Table usersGames {
+    id int [pk]
+    userId int [ref: > users.id]
+    gameId int [ref: > games.id]
+    platformId int [ref: > platforms.id]
+}
+
+Table taverns {
+    id int [pk]
+    name varchar
+}

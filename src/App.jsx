@@ -1,4 +1,4 @@
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { Login } from "./components/auth/Login";
 import { Register } from "./components/auth/Register";
 import { Authorized } from "./components/Authorized";
@@ -6,7 +6,6 @@ import { ApplicationViews } from "./components/ApplicationViews";
 import { NavBar } from "./components/nav/NavBar";
 
 export const App = () => {
-
   return (
     <Routes>
       <Route path="/login" element={<Login />} />
@@ -18,7 +17,7 @@ export const App = () => {
           // check if the user is authorized first
           <Authorized>
             <>
-             <NavBar />
+              <NavBar />
               {/* the appilcationViews is the child component of Authorized */}
               <ApplicationViews />
             </>
