@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { createUser, getUserByEmail } from "../services/userServices";
 import { getUserByUsername } from "../services/userServices";
+import logo from "../../assets/logo.png";
 
 export const Register = (props) => {
   const [user, setUser] = useState({
@@ -22,7 +23,7 @@ export const Register = (props) => {
           }),
         );
 
-        navigate("/");
+        navigate("/login");
       }
     });
   };
@@ -54,16 +55,18 @@ export const Register = (props) => {
   };
 
   return (
-    <main className="flex items-center justify-center min-h-screen bg-charcoal">
+    <main className="bg-charcoal flex min-h-screen items-center justify-center">
       <section className="w-full max-w-md">
         <form
-          className="border-2 border-gold rounded-lg p-8 bg-iron shadow-lg"
+          className="border-gold bg-iron rounded-lg border-2 p-8 shadow-lg"
           onSubmit={handleRegister}
         >
-          <h1 className="font-serif text-5xl text-gold text-center mb-2">
-            Quest Hall
-          </h1>
-          <h2 className="font-serif text-center text-parchment text-lg mb-8">
+          <img
+            src={logo}
+            alt="Quest Hall Logo"
+            className="logo-primary mx-auto"
+          />
+          <h2 className="text-parchment mb-8 text-center font-serif text-lg">
             Create Your Account
           </h2>
 
@@ -73,7 +76,7 @@ export const Register = (props) => {
                 onChange={updateUser}
                 type="text"
                 id="firstName"
-                className="w-full font-serif px-4 py-2 border-2 border-gold rounded bg-cream text-charcoal focus:outline-none focus:border-rust placeholder-stone"
+                className="input-primary"
                 placeholder="First name"
                 required
                 autoFocus
@@ -87,7 +90,7 @@ export const Register = (props) => {
                 onChange={updateUser}
                 type="text"
                 id="lastName"
-                className="w-full font-serif px-4 py-2 border-2 border-gold rounded bg-cream text-charcoal focus:outline-none focus:border-rust placeholder-stone"
+                className="input-primary"
                 placeholder="Last name"
                 required
               />
@@ -100,7 +103,7 @@ export const Register = (props) => {
                 onChange={updateUser}
                 type="text"
                 id="username"
-                className="w-full font-serif px-4 py-2 border-2 border-gold rounded bg-cream text-charcoal focus:outline-none focus:border-rust placeholder-stone"
+                className="input-primary"
                 placeholder="Create Username"
                 required
               />
@@ -113,7 +116,7 @@ export const Register = (props) => {
                 onChange={updateUser}
                 type="email"
                 id="email"
-                className="w-full font-serif px-4 py-2 border-2 border-gold rounded bg-cream text-charcoal focus:outline-none focus:border-rust placeholder-stone"
+                className="input-primary"
                 placeholder="Email address"
                 required
               />
@@ -121,22 +124,19 @@ export const Register = (props) => {
           </fieldset>
 
           <fieldset className="mb-6">
-            <div className="form-group">
-              <button
-                className="w-full font-serif py-3 px-4 bg-[#B7410E] text-[#F5F1E8] border-2 border-[#B7410E] rounded-md hover:bg-[#8B0000] hover:border-[#8B0000] transition duration-200 font-bold text-lg"
-                type="submit"
-              >
+            <div>
+              <button className="btn-primary" type="submit">
                 Register
               </button>
             </div>
           </fieldset>
 
           <div className="text-center">
-            <p className="font-serif text-parchment">
+            <p className="text-parchment font-serif">
               Already have an account?{" "}
               <Link
                 to="/login"
-                className="text-gold hover:text-[#8B0000] transition duration-200 font-bold underline"
+                className="text-gold font-bold underline transition duration-200 hover:text-[#8B0000]"
               >
                 Sign in here
               </Link>

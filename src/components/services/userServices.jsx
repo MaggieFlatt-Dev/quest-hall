@@ -5,17 +5,17 @@ export const getUserByEmail = (email) => {
 };
 
 export const getUserByUsername = (username) => {
-  return fetch(`http://localhost:8088/users?username=${username}`).then((res) =>
+  return fetch(`http://localhost:8000/users?username=${username}`).then((res) =>
     res.json(),
   );
 };
 
-export const createUser = (customer) => {
+export const createUser = (user) => {
   return fetch("http://localhost:8000/users", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(customer),
+    body: JSON.stringify(user),
   }).then((res) => res.json());
 };

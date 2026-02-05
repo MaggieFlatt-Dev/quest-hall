@@ -1,3 +1,10 @@
+import { Route, Routes } from "react-router-dom";
+import { Welcome } from "./Welcome";
+
 export const ApplicationViews = () => {
-  return <div className="text-gold">Quest Hall</div>;
+  return (
+    <Routes>
+      <Route path="/welcome" element={<Welcome />} />
+    </Routes>
+  );
 };

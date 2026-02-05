@@ -31,9 +31,9 @@ Quest Hall solves this by providing a single, unified platform where users can:
 - **Game Details** - View detailed information about each game including name, description, and cover image
 
 ### Stretch Goals
-- **Favorites System** - Mark games as favorites for quick access
 - **Tavern Feature** - Join virtual taverns with friends
 - **Multiplayer Matching** - See which multiplayer/co-op games you have in common with tavern members
+- **Favorites System** - Mark games as favorites for quick access
 - **Multiple Platforms** - Add the same game on multiple platforms in a single entry
 
 ## Tech Stack
@@ -151,9 +151,12 @@ quest-hall/
 Quest Hall uses Tailwind CSS with a medieval/fantasy theme. Custom colors include:
 - **Gold** (#D4AF37) - Accent color
 - **Parchment** (#F3E5AB) - Background/light color
+- **Cream** (#F5F1E8) - accent color
 - **Stone** (#818589) - Secondary color
 - **Rust** (#B7410E) - Accent color
+- **Crimson** (#8B0000) - Secondary color
 - **Iron** (#43464B) - Dark color
+- **Charcoal** (#36393F) - Dark Color
 
 ## Future Enhancements
 

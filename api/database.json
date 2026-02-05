@@ -39,6 +39,20 @@
       "username": "MrVoid92",
       "email": "dakota@email.com",
       "tavernId": 3
+    },
+    {
+      "firstName": "Maggie",
+      "lastName": "Flatt",
+      "username": "Elara19",
+      "email": "maggieflatt19@gmail.com",
+      "id": 6
+    },
+    {
+      "firstName": "Te'Aira",
+      "lastName": "Nunn",
+      "username": "NunnYourBusiness",
+      "email": "teairanunn@email.com",
+      "id": 7
     }
   ],
   "games": [
@@ -226,62 +240,289 @@
     }
   ],
   "gamesPlatforms": [
-    { "id": 1, "gameId": 1, "platformId": 1 },
-    { "id": 2, "gameId": 1, "platformId": 2 },
-    { "id": 3, "gameId": 1, "platformId": 4 },
-    { "id": 4, "gameId": 2, "platformId": 1 },
-    { "id": 5, "gameId": 2, "platformId": 2 },
-    { "id": 6, "gameId": 2, "platformId": 5 },
-    { "id": 7, "gameId": 3, "platformId": 1 },
-    { "id": 8, "gameId": 3, "platformId": 2 },
-    { "id": 9, "gameId": 4, "platformId": 1 },
-    { "id": 10, "gameId": 4, "platformId": 5 },
-    { "id": 11, "gameId": 5, "platformId": 5 },
-    { "id": 12, "gameId": 6, "platformId": 1 },
-    { "id": 13, "gameId": 7, "platformId": 1 },
-    { "id": 14, "gameId": 8, "platformId": 1 },
-    { "id": 15, "gameId": 9, "platformId": 1 },
-    { "id": 16, "gameId": 9, "platformId": 4 },
-    { "id": 17, "gameId": 10, "platformId": 1 },
-    { "id": 18, "gameId": 11, "platformId": 1 },
-    { "id": 19, "gameId": 11, "platformId": 5 },
-    { "id": 20, "gameId": 12, "platformId": 1 },
-    { "id": 21, "gameId": 13, "platformId": 1 },
-    { "id": 22, "gameId": 14, "platformId": 1 },
-    { "id": 23, "gameId": 15, "platformId": 5 },
-    { "id": 24, "gameId": 16, "platformId": 1 },
-    { "id": 25, "gameId": 17, "platformId": 1 },
-    { "id": 26, "gameId": 17, "platformId": 4 },
-    { "id": 27, "gameId": 18, "platformId": 1 },
-    { "id": 28, "gameId": 19, "platformId": 1 },
-    { "id": 29, "gameId": 20, "platformId": 1 }
+    {
+      "id": 1,
+      "gameId": 1,
+      "platformId": 1
+    },
+    {
+      "id": 2,
+      "gameId": 1,
+      "platformId": 2
+    },
+    {
+      "id": 3,
+      "gameId": 1,
+      "platformId": 4
+    },
+    {
+      "id": 4,
+      "gameId": 2,
+      "platformId": 1
+    },
+    {
+      "id": 5,
+      "gameId": 2,
+      "platformId": 2
+    },
+    {
+      "id": 6,
+      "gameId": 2,
+      "platformId": 5
+    },
+    {
+      "id": 7,
+      "gameId": 3,
+      "platformId": 1
+    },
+    {
+      "id": 8,
+      "gameId": 3,
+      "platformId": 2
+    },
+    {
+      "id": 9,
+      "gameId": 4,
+      "platformId": 1
+    },
+    {
+      "id": 10,
+      "gameId": 4,
+      "platformId": 5
+    },
+    {
+      "id": 11,
+      "gameId": 5,
+      "platformId": 5
+    },
+    {
+      "id": 12,
+      "gameId": 6,
+      "platformId": 1
+    },
+    {
+      "id": 13,
+      "gameId": 7,
+      "platformId": 1
+    },
+    {
+      "id": 14,
+      "gameId": 8,
+      "platformId": 1
+    },
+    {
+      "id": 15,
+      "gameId": 9,
+      "platformId": 1
+    },
+    {
+      "id": 16,
+      "gameId": 9,
+      "platformId": 4
+    },
+    {
+      "id": 17,
+      "gameId": 10,
+      "platformId": 1
+    },
+    {
+      "id": 18,
+      "gameId": 11,
+      "platformId": 1
+    },
+    {
+      "id": 19,
+      "gameId": 11,
+      "platformId": 5
+    },
+    {
+      "id": 20,
+      "gameId": 12,
+      "platformId": 1
+    },
+    {
+      "id": 21,
+      "gameId": 13,
+      "platformId": 1
+    },
+    {
+      "id": 22,
+      "gameId": 14,
+      "platformId": 1
+    },
+    {
+      "id": 23,
+      "gameId": 15,
+      "platformId": 5
+    },
+    {
+      "id": 24,
+      "gameId": 16,
+      "platformId": 1
+    },
+    {
+      "id": 25,
+      "gameId": 17,
+      "platformId": 1
+    },
+    {
+      "id": 26,
+      "gameId": 17,
+      "platformId": 4
+    },
+    {
+      "id": 27,
+      "gameId": 18,
+      "platformId": 1
+    },
+    {
+      "id": 28,
+      "gameId": 19,
+      "platformId": 1
+    },
+    {
+      "id": 29,
+      "gameId": 20,
+      "platformId": 1
+    }
   ],
   "usersGames": [
-    { "id": 1, "userId": 1, "gameId": 1, "platformId": 1 },
-    { "id": 2, "userId": 1, "gameId": 4, "platformId": 1 },
-    { "id": 3, "userId": 1, "gameId": 9, "platformId": 1 },
-    { "id": 4, "userId": 1, "gameId": 13, "platformId": 1 },
-    { "id": 5, "userId": 2, "gameId": 1, "platformId": 2 },
-    { "id": 6, "userId": 2, "gameId": 2, "platformId": 2 },
-    { "id": 7, "userId": 2, "gameId": 3, "platformId": 1 },
-    { "id": 8, "userId": 2, "gameId": 4, "platformId": 1 },
-    { "id": 9, "userId": 2, "gameId": 11, "platformId": 1 },
-    { "id": 10, "userId": 3, "gameId": 5, "platformId": 5 },
-    { "id": 11, "userId": 3, "gameId": 15, "platformId": 5 },
-    { "id": 12, "userId": 3, "gameId": 12, "platformId": 1 },
-    { "id": 13, "userId": 4, "gameId": 2, "platformId": 1 },
-    { "id": 14, "userId": 4, "gameId": 3, "platformId": 1 },
-    { "id": 15, "userId": 4, "gameId": 8, "platformId": 1 },
-    { "id": 16, "userId": 4, "gameId": 9, "platformId": 1 },
-    { "id": 17, "userId": 5, "gameId": 6, "platformId": 1 },
-    { "id": 18, "userId": 5, "gameId": 13, "platformId": 1 },
-    { "id": 19, "userId": 5, "gameId": 17, "platformId": 1 }
+    {
+      "id": 1,
+      "userId": 1,
+      "gameId": 1,
+      "platformId": 1
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "gameId": 4,
+      "platformId": 1
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "gameId": 9,
+      "platformId": 1
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "gameId": 13,
+      "platformId": 1
+    },
+    {
+      "id": 5,
+      "userId": 2,
+      "gameId": 1,
+      "platformId": 2
+    },
+    {
+      "id": 6,
+      "userId": 2,
+      "gameId": 2,
+      "platformId": 2
+    },
+    {
+      "id": 7,
+      "userId": 2,
+      "gameId": 3,
+      "platformId": 1
+    },
+    {
+      "id": 8,
+      "userId": 2,
+      "gameId": 4,
+      "platformId": 1
+    },
+    {
+      "id": 9,
+      "userId": 2,
+      "gameId": 11,
+      "platformId": 1
+    },
+    {
+      "id": 10,
+      "userId": 3,
+      "gameId": 5,
+      "platformId": 5
+    },
+    {
+      "id": 11,
+      "userId": 3,
+      "gameId": 15,
+      "platformId": 5
+    },
+    {
+      "id": 12,
+      "userId": 3,
+      "gameId": 12,
+      "platformId": 1
+    },
+    {
+      "id": 13,
+      "userId": 4,
+      "gameId": 2,
+      "platformId": 1
+    },
+    {
+      "id": 14,
+      "userId": 4,
+      "gameId": 3,
+      "platformId": 1
+    },
+    {
+      "id": 15,
+      "userId": 4,
+      "gameId": 8,
+      "platformId": 1
+    },
+    {
+      "id": 16,
+      "userId": 4,
+      "gameId": 9,
+      "platformId": 1
+    },
+    {
+      "id": 17,
+      "userId": 5,
+      "gameId": 6,
+      "platformId": 1
+    },
+    {
+      "id": 18,
+      "userId": 5,
+      "gameId": 13,
+      "platformId": 1
+    },
+    {
+      "id": 19,
+      "userId": 5,
+      "gameId": 17,
+      "platformId": 1
+    }
   ],
   "favorites": [
-    { "id": 1, "userId": 1, "gameId": 1 },
-    { "id": 2, "userId": 1, "gameId": 4 },
-    { "id": 3, "userId": 2, "gameId": 3 },
-    { "id": 4, "userId": 3, "gameId": 5 }
+    {
+      "id": 1,
+      "userId": 1,
+      "gameId": 1
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "gameId": 4
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "gameId": 3
+    },
+    {
+      "id": 4,
+      "userId": 3,
+      "gameId": 5
+    }
   ],
   "taverns": [
     {
