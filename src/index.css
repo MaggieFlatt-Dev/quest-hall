@@ -142,7 +142,7 @@
     @apply w-full font-serif py-3 px-4 bg-[#B7410E] text-[#F5F1E8] border-2 border-[#B7410E] rounded-md hover:bg-[#8B0000] hover:border-[#8B0000] transition duration-200 font-bold text-lg;
   }
   .btn-secondary {
-    @apply w-full md:w-auto font-serif py-3 px-4 bg-[#B7410E] text-[#F5F1E8] border-2 border-[#B7410E] rounded-md hover:bg-[#8B0000] hover:border-[#8B0000] transition duration-200 font-bold text-lg;
+    @apply w-48 font-serif py-3 px-4 bg-[#B7410E] text-[#F5F1E8] rounded-md hover:bg-[#8B0000] transition duration-200 font-bold text-lg;
   }
 
 /*Input Fields*/
