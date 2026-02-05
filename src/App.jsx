@@ -16,11 +16,8 @@ export const App = () => {
         element={
           // check if the user is authorized first
           <Authorized>
-            <>
-              <NavBar />
               {/* the appilcationViews is the child component of Authorized */}
               <ApplicationViews />
-            </>
           </Authorized>
         }
       />

@@ -6,6 +6,8 @@
 @tailwind utilities;
 
 @layer components {
+
+  /*colors*/
   .text-gold {
     @apply text-[#D4AF37];
   }
@@ -104,6 +106,7 @@
 
 }
 
+/*Text outline colors*/
 .text-outline-parchment {
   -webkit-text-stroke: 0.5px #F3E5AB;
   text-stroke: 0.5px #F3E5AB;
@@ -132,4 +135,22 @@
 .text-outline-charcoal {
   -webkit-text-stroke: 0.5px #36393F;
   text-stroke: 0.5px #36393F;
+}
+
+/*Buttons*/
+.btn-primary {
+    @apply w-full font-serif py-3 px-4 bg-[#B7410E] text-[#F5F1E8] border-2 border-[#B7410E] rounded-md hover:bg-[#8B0000] hover:border-[#8B0000] transition duration-200 font-bold text-lg;
+  }
+  .btn-secondary {
+    @apply w-48 font-serif py-3 px-4 bg-[#B7410E] text-[#F5F1E8] rounded-md hover:bg-[#8B0000] transition duration-200 font-bold text-lg;
+  }
+
+/*Input Fields*/
+.input-primary {
+  @apply w-full font-serif px-4 py-2 border-2 border-[#D4AF37] rounded bg-[#F5F1E8] text-[#2C2C2C] focus:outline-none focus:border-[#8B0000] placeholder-[#928E85];
+}
+
+/*Logo*/
+.logo-primary {
+  @apply w-[300px] h-[260px] mb-4;
 }
