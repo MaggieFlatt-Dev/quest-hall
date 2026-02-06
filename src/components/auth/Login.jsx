@@ -21,7 +21,7 @@ export const Login = () => {
           }),
         );
 
-        navigate("/welcome");
+        navigate("/");
       } else {
         window.alert("Invalid login");
       }
@@ -40,11 +40,11 @@ export const Login = () => {
             alt="Quest Hall Logo"
             className="logo-primary mx-auto"
           />
-          <h2 className="text-parchment mb-8 text-center font-serif text-lg">
+          <h2 className="text-parchment mb-8 text-center text-lg">
             Please sign in
           </h2>
           <fieldset className="mb-6">
-            <label className="text-gold mb-2 block font-serif">Email</label>
+            <label className="text-gold mb-2 block">Email</label>
             <input
               type="email"
               value={email ?? ""}
@@ -61,7 +61,7 @@ export const Login = () => {
             </button>
           </fieldset>
           <div className="text-center">
-            <p className="text-parchment font-serif">
+            <p className="text-parchment">
               Not a member yet?{" "}
               <Link
                 to="/register"

@@ -66,7 +66,7 @@ export const Register = (props) => {
             alt="Quest Hall Logo"
             className="logo-primary mx-auto"
           />
-          <h2 className="text-parchment mb-8 text-center font-serif text-lg">
+          <h2 className="text-parchment mb-8 text-center text-lg">
             Create Your Account
           </h2>
 
@@ -132,7 +132,7 @@ export const Register = (props) => {
           </fieldset>
 
           <div className="text-center">
-            <p className="text-parchment font-serif">
+            <p className="text-parchment">
               Already have an account?{" "}
               <Link
                 to="/login"

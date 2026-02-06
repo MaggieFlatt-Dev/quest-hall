@@ -5,9 +5,49 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply font-serif
+}
+
 @layer components {
 
   /*colors*/
+  .text-parchment {
+    @apply text-[#F3E5AB];
+  }
+  
+  .bg-parchment {
+    @apply bg-[#F3E5AB];
+  }
+  
+  .border-parchment {
+    @apply border-[#F3E5AB];
+  }
+  
+  .text-cream {
+    @apply text-[#F5F1E8];
+  }
+  
+  .bg-cream {
+    @apply bg-[#F5F1E8];
+  }
+  
+  .border-cream {
+    @apply border-[#F5F1E8];
+  }
+
+  .text-tan {
+    @apply text-[#D4A574];
+  }
+  
+  .bg-tan {
+    @apply bg-[#D4A574];
+  }
+  
+  .border-tan {
+    @apply border-[#D4A574];
+  }
+
   .text-gold {
     @apply text-[#D4AF37];
   }
@@ -19,97 +59,87 @@
   .border-gold {
     @apply border-[#D4AF37];
   }
-
-   .text-parchment {
-    @apply text-[#F3E5AB];
+  
+  .text-rust {
+    @apply text-[#B7410E];
   }
-
-   .bg-parchment {
-    @apply bg-[#F3E5AB];
+  
+  .bg-rust {
+    @apply bg-[#B7410E];
   }
-
-   .border-parchment {
-    @apply border-[#F3E5AB];
+  
+  .border-rust {
+    @apply border-[#B7410E];
   }
-
+  
+  .text-crimson {
+    @apply text-[#8B0000];
+  }
+  
+  .bg-crimson {
+    @apply bg-[#8B0000];
+  }
+  
+  .border-crimson {
+    @apply border-[#8B0000];
+  }
+  
+  .border-rust {
+    @apply border-[#B7410E];
+  }
+  
+  .text-iron {
+    @apply text-[#43464B];
+  }
+  
+  .bg-iron {
+    @apply bg-[#43464B];
+  }
+  
+  .border-iron {
+    @apply border-[#43464B];
+  }
+  
   .text-stone {
     @apply text-[#818589];
   }
-
-   .bg-stone {
+    
+  .bg-stone {
     @apply bg-[#818589];
   }
-
-   .border-stone {
+    
+  .border-stone {
     @apply border-[#818589];
   }
 
-   .text-rust {
-    @apply text-[#B7410E];
-  }
-
-   .bg-rust {
-    @apply bg-[#B7410E];
-  }
-
-    .text-crimson {
-    @apply text-[#8B0000];
-  }
-
-    .bg-crimson {
-    @apply bg-[#8B0000];
-  }
-
-    .border-crimson {
-    @apply border-[#8B0000];
-  }
-
-   .border-rust {
-    @apply border-[#B7410E];
-  }
-
-    .text-iron {
-    @apply text-[#43464B];
-  }
-
-    .bg-iron {
-    @apply bg-[#43464B];
-  }
-
-    .border-iron {
-    @apply border-[#43464B];
-  }
-
-    .text-cream {
-    @apply text-[#F5F1E8];
-  }
-
-    .bg-cream {
-    @apply bg-[#F5F1E8];
-  }
-
-    .border-cream {
-    @apply border-[#F5F1E8];
-  }
-
-    .text-charcoal {
+  .text-charcoal {
     @apply text-[#36393F];
   }
-
-    .bg-charcoal {
+  
+  .bg-charcoal {
     @apply bg-[#36393F];
   }
-
-    .border-charcoal {
+  
+  .border-charcoal {
     @apply border-[#36393F];
   }
-
+  
 }
 
 /*Text outline colors*/
 .text-outline-parchment {
   -webkit-text-stroke: 0.5px #F3E5AB;
   text-stroke: 0.5px #F3E5AB;
+}
+
+.text-outline-cream {
+  -webkit-text-stroke: 0.3px #F5F1E8;
+  text-stroke: 0.3px #F5F1E8;
+}
+
+.text-outline-tan {
+  -webkit-text-stroke: 0.5px #D4A574;
+  text-stroke: 0.5px #D4A574;
 }
 
 .text-outline-rust {
@@ -122,11 +152,10 @@
   text-stroke: 0.5px #8B0000;
 }
 
-.text-outline-cream {
-  -webkit-text-stroke: 0.3px #F5F1E8;
-  text-stroke: 0.3px #F5F1E8;
+.text-outline-stone {
+  -webkit-text-stroke: 0.3px #818589;
+  text-stroke: 0.3px #818589;
 }
-
 .text-outline-iron {
   -webkit-text-stroke: 0.3px #43464B;
   text-stroke: 0.3px #43464B;
@@ -153,4 +182,13 @@
 /*Logo*/
 .logo-primary {
   @apply w-[300px] h-[260px] mb-4;
+}
+
+.logo-secondary {
+  @apply w-[53px] h-[43px] pl-1 filter invert brightness-5 saturate-50 hue-rotate-180;
+}
+
+/*Nav Links*/
+.nav-link {
+  @apply transition duration-200 p-1 rounded-lg transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-black/60 hover:bg-[#C9A227]
 }
