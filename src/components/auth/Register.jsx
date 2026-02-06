@@ -55,10 +55,10 @@ export const Register = (props) => {
   };
 
   return (
-    <main className="bg-charcoal flex min-h-screen items-center justify-center">
+    <main className="bg-darkGray flex min-h-screen items-center justify-center">
       <section className="w-full max-w-md">
         <form
-          className="border-gold bg-iron rounded-lg border-2 p-8 shadow-lg"
+          className="border-olive bg-gray rounded-lg border-2 p-8 shadow-lg"
           onSubmit={handleRegister}
         >
           <img
@@ -66,7 +66,7 @@ export const Register = (props) => {
             alt="Quest Hall Logo"
             className="logo-primary mx-auto"
           />
-          <h2 className="text-parchment mb-8 text-center text-lg">
+          <h2 className="text-silver mb-8 text-center text-lg">
             Create Your Account
           </h2>
 
@@ -132,11 +132,11 @@ export const Register = (props) => {
           </fieldset>
 
           <div className="text-center">
-            <p className="text-parchment">
+            <p className="text-silver">
               Already have an account?{" "}
               <Link
                 to="/login"
-                className="text-gold font-bold underline transition duration-200 hover:text-[#8B0000]"
+                className="text-olive hover:text-darkGreen font-bold underline transition duration-200"
               >
                 Sign in here
               </Link>

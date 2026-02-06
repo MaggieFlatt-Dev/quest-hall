@@ -6,24 +6,24 @@ export const NavBar = () => {
   const navigate = useNavigate();
 
   return (
-  <div className="bg-[#1a472a] text-[#d3d3d3] fixed flex w-screen border-b-3 border-[#2d5a3d] py-2 font-bold">
+    <div className="bg-darkGreen border-mediumGreen fixed z-50 flex w-full border-b-3 py-2 font-bold">
       <div>
         <img src={skull} alt="Quest Hall Logo" className="logo-secondary" />
       </div>
       <div className="flex space-x-24 pt-2 pl-6">
-        <div className="transition duration-200 p-1 rounded-lg transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-black/60 hover:bg-[#2d5a3d]">
+        <div className="nav-link">
           <Link to="/library">Library</Link>
         </div>
-        <div className="transition duration-200 p-1 rounded-lg transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-black/60 hover:bg-[#2d5a3d]">
+        <div className="nav-link">
           <Link to="/taverns">Taverns</Link>
         </div>
-        <div className="transition duration-200 p-1 rounded-lg transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-black/60 hover:bg-[#2d5a3d]">
+        <div className="nav-link">
           <Link to="/addGame">Add Game</Link>
         </div>
       </div>
       <div>
         <button
-          className="absolute right-4 pt-2 transition duration-200 p-1 rounded-lg transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-black/60 hover:bg-[#2d5a3d]"
+          className="nav-link absolute right-4 pt-2"
           onClick={() => {
             localStorage.removeItem("QuestHall_user");
             navigate("/login", { replace: true });

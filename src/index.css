@@ -1,194 +1,96 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
 
 @import "tailwindcss";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+/* Custom theme colors */
+@theme {
+  --color-darkGreen: #22311d;
+  --color-mediumGreen: #3f5a36;
+  --color-olive: #556b2f;
+  --color-silver: #d3d3d3;
+  --color-stone: #818589;
+  --color-darkGray: #2a2a2a;
+  --color-gray: #404040;
+  --color-lightGray: #f5f5f5;
+  --color-offWhite: #f8f8f8;
+  
+  --font-serif: 'Cinzel', serif;
+}
 
 body {
-  @apply font-serif
+  @apply font-serif;
 }
 
-@layer components {
-
-  /*colors*/
-  .text-parchment {
-    @apply text-[#F3E5AB];
-  }
-  
-  .bg-parchment {
-    @apply bg-[#F3E5AB];
-  }
-  
-  .border-parchment {
-    @apply border-[#F3E5AB];
-  }
-  
-  .text-cream {
-    @apply text-[#F5F1E8];
-  }
-  
-  .bg-cream {
-    @apply bg-[#F5F1E8];
-  }
-  
-  .border-cream {
-    @apply border-[#F5F1E8];
-  }
-
-  .text-tan {
-    @apply text-[#D4A574];
-  }
-  
-  .bg-tan {
-    @apply bg-[#D4A574];
-  }
-  
-  .border-tan {
-    @apply border-[#D4A574];
-  }
-
-  .text-gold {
-    @apply text-[#D4AF37];
-  }
-
-  .bg-gold {
-    @apply bg-[#D4AF37];
-  }
-
-  .border-gold {
-    @apply border-[#D4AF37];
-  }
-  
-  .text-rust {
-    @apply text-[#B7410E];
-  }
-  
-  .bg-rust {
-    @apply bg-[#B7410E];
-  }
-  
-  .border-rust {
-    @apply border-[#B7410E];
-  }
-  
-  .text-crimson {
-    @apply text-[#8B0000];
-  }
-  
-  .bg-crimson {
-    @apply bg-[#8B0000];
-  }
-  
-  .border-crimson {
-    @apply border-[#8B0000];
-  }
-  
-  .border-rust {
-    @apply border-[#B7410E];
-  }
-  
-  .text-iron {
-    @apply text-[#43464B];
-  }
-  
-  .bg-iron {
-    @apply bg-[#43464B];
-  }
-  
-  .border-iron {
-    @apply border-[#43464B];
-  }
-  
-  .text-stone {
-    @apply text-[#818589];
-  }
-    
-  .bg-stone {
-    @apply bg-[#818589];
-  }
-    
-  .border-stone {
-    @apply border-[#818589];
-  }
-
-  .text-charcoal {
-    @apply text-[#36393F];
-  }
-  
-  .bg-charcoal {
-    @apply bg-[#36393F];
-  }
-  
-  .border-charcoal {
-    @apply border-[#36393F];
-  }
-  
-}
 
 /*Text outline colors*/
-.text-outline-parchment {
-  -webkit-text-stroke: 0.5px #F3E5AB;
-  text-stroke: 0.5px #F3E5AB;
+.text-outline-darkGreen {
+  -webkit-text-stroke: 0.5px #22311d;
+  text-stroke: 0.5px #22311d;
 }
 
-.text-outline-cream {
-  -webkit-text-stroke: 0.3px #F5F1E8;
-  text-stroke: 0.3px #F5F1E8;
+.text-outline-mediumGreen {
+  -webkit-text-stroke: 0.3px #3f5a36;
+  text-stroke: 0.3px #3f5a36;
 }
 
-.text-outline-tan {
-  -webkit-text-stroke: 0.5px #D4A574;
-  text-stroke: 0.5px #D4A574;
+.text-outline-olive {
+  -webkit-text-stroke: 0.5px #556b2f;
+  text-stroke: 0.5px #556b2f;
 }
 
-.text-outline-rust {
-  -webkit-text-stroke: 0.3px #B7410E;
-  text-stroke: 0.3px #B7410E;
-}
-
-.text-outline-crimson {
-  -webkit-text-stroke: 0.5px #8B0000;
-  text-stroke: 0.5px #8B0000;
+.text-outline-silver {
+  -webkit-text-stroke: 0.3px #d3d3d3;
+  text-stroke: 0.3px #d3d3d3;
 }
 
 .text-outline-stone {
-  -webkit-text-stroke: 0.3px #818589;
-  text-stroke: 0.3px #818589;
-}
-.text-outline-iron {
-  -webkit-text-stroke: 0.3px #43464B;
-  text-stroke: 0.3px #43464B;
+  -webkit-text-stroke: 0.5px #818589;
+  text-stroke: 0.5px #818589;
 }
 
-.text-outline-charcoal {
-  -webkit-text-stroke: 0.5px #36393F;
-  text-stroke: 0.5px #36393F;
+.text-outline-darkGray {
+  -webkit-text-stroke: 0.3px #2a2a2a;
+  text-stroke: 0.3px #2a2a2a;
+}
+
+.text-outline-lightGray {
+  -webkit-text-stroke: 0.3px #f5f5f5;
+  text-stroke: 0.3px #f5f5f5;
+}
+
+.text-outline-offWhite {
+  -webkit-text-stroke: 0.5px #f8f8f8;
+  text-stroke: 0.5px #f8f8f8;
 }
 
 /*Buttons*/
 .btn-primary {
-    @apply w-full font-serif py-3 px-4 bg-[#B7410E] text-[#F5F1E8] border-2 border-[#B7410E] rounded-md hover:bg-[#8B0000] hover:border-[#8B0000] transition duration-200 font-bold text-lg;
+    @apply w-full font-serif py-3 px-4 bg-darkGreen text-offWhite border-2 border-darkGreen rounded-md hover:bg-mediumGreen hover:border-mediumGreen transition duration-200 font-bold text-lg;
   }
+
   .btn-secondary {
-    @apply w-48 font-serif py-3 px-4 bg-[#B7410E] text-[#F5F1E8] rounded-md hover:bg-[#8B0000] transition duration-200 font-bold text-lg;
+    @apply w-48 font-serif py-3 px-4 bg-darkGreen text-offWhite border-2 border-darkGreen rounded-md hover:bg-mediumGreen hover:border-mediumGreen transition duration-200 font-bold text-lg;
+  }
+  
+  .btn-three {
+    @apply w-48 font-serif py-3 px-4 bg-olive text-offWhite rounded-md hover:bg-mediumGreen transition duration-200 font-bold text-lg;
   }
 
 /*Input Fields*/
 .input-primary {
-  @apply w-full font-serif px-4 py-2 border-2 border-[#D4AF37] rounded bg-[#F5F1E8] text-[#2C2C2C] focus:outline-none focus:border-[#8B0000] placeholder-[#928E85];
+  @apply w-full font-serif px-4 py-2 border-2 border-stone rounded bg-offWhite text-darkGray focus:outline-none focus:border-olive placeholder-stone;
 }
 
 /*Logo*/
 .logo-primary {
-  @apply w-[300px] h-[260px] mb-4;
+  @apply w-[400px] h-[350px] mb-4;
 }
 
 .logo-secondary {
-  @apply w-[53px] h-[43px] pl-1 filter invert brightness-5 saturate-50 hue-rotate-180;
+  @apply w-[53px] h-[43px] pl-1;
 }
 
 /*Nav Links*/
 .nav-link {
-  @apply transition duration-200 p-1 rounded-lg transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-black/60 hover:bg-[#C9A227]
+  @apply transition duration-200 p-1 rounded-lg transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-black/60 hover:bg-silver hover:text-darkGreen text-silver
 }
