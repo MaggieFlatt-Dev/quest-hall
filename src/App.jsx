@@ -3,7 +3,6 @@ import { Login } from "./components/auth/Login";
 import { Register } from "./components/auth/Register";
 import { Authorized } from "./components/Authorized";
 import { ApplicationViews } from "./components/ApplicationViews";
-import { NavBar } from "./components/nav/NavBar";
 
 export const App = () => {
   return (

@@ -1,13 +1,16 @@
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { Welcome } from "./Welcome";
 import { Library } from "./library/Library";
+import { Layout } from "./Layout";
 
 export const ApplicationViews = () => {
   return (
     <Routes>
-      <Route path="/" element={<Navigate to="/welcome" />} />
-      <Route path="welcome" element={<Welcome />} />
-      <Route path="library" element={<Library />} />
-    </Routes>
+      <Route index element={<Welcome />} />
+
+      <Route element={<Layout />}>
+        <Route path="library" element={<Library />} />
+      </Route>
+ </Routes>
   );
 };

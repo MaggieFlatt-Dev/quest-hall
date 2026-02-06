@@ -21,7 +21,7 @@ export const Login = () => {
           }),
         );
 
-        navigate("/welcome");
+        navigate("/");
       } else {
         window.alert("Invalid login");
       }
@@ -29,10 +29,10 @@ export const Login = () => {
   };
 
   return (
-    <main className="bg-charcoal flex min-h-screen items-center justify-center">
+    <main className="bg-darkGray flex min-h-screen items-center justify-center">
       <section className="w-full max-w-md">
         <form
-          className="border-gold bg-iron rounded-lg border-2 p-8 shadow-lg"
+          className="bg-gray border-mediumGreen rounded-lg border-2 p-8 shadow-lg"
           onSubmit={handleLogin}
         >
           <img
@@ -40,11 +40,11 @@ export const Login = () => {
             alt="Quest Hall Logo"
             className="logo-primary mx-auto"
           />
-          <h2 className="text-parchment mb-8 text-center font-serif text-lg">
+          <h2 className="text-silver mb-8 text-center text-lg">
             Please sign in
           </h2>
           <fieldset className="mb-6">
-            <label className="text-gold mb-2 block font-serif">Email</label>
+            <label className="text-silver mb-2 block">Email</label>
             <input
               type="email"
               value={email ?? ""}
@@ -61,11 +61,11 @@ export const Login = () => {
             </button>
           </fieldset>
           <div className="text-center">
-            <p className="text-parchment font-serif">
+            <p className="text-silver">
               Not a member yet?{" "}
               <Link
                 to="/register"
-                className="text-gold font-bold underline transition duration-200 hover:text-[#B7410E]"
+                className="text-mediumGreen hover:text-darkGray font-bold underline transition duration-200"
               >
                 Register here
               </Link>
