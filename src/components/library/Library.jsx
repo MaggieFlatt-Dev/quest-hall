@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getUsersGames } from "../services/userGamesServices";
+import { getUsersGamesByUserId } from "../services/userGamesServices";
 import { Link } from "react-router-dom";
 
 export const Library = ({ user }) => {
@@ -7,7 +7,7 @@ export const Library = ({ user }) => {
 
   useEffect(() => {
     //get users games
-    getUsersGames(user?.id).then(setGames);
+    getUsersGamesByUserId(user?.id).then(setGames);
   }, [user]);
 
   return (
