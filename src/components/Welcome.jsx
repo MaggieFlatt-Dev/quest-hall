@@ -3,7 +3,7 @@ import logo from "../assets/logo.png";
 
 export const Welcome = () => {
   return (
-    <main className="bg-gray min-h-screen w-full">
+    <div className="bg-gray min-h-screen w-full">
       <div className="flex justify-center pt-6">
         <img src={logo} alt="Quest Hall Logo" className="logo-primary" />
       </div>
@@ -17,6 +17,6 @@ export const Welcome = () => {
           Taverns
         </button>
       </section>
-    </main>
+    </div>
   );
 };
