@@ -10,6 +10,12 @@ export const getUserByUsername = (username) => {
   );
 };
 
+export const getUserById = (userId) => {
+  return fetch(`http://localhost:8000/users/${userId}`).then((res) =>
+    res.json(),
+  );
+};
+
 export const createUser = (user) => {
   return fetch("http://localhost:8000/users", {
     method: "POST",

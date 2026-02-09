@@ -1,31 +1,35 @@
 import { useEffect, useState } from "react";
 import { getUsersGames } from "../services/userGamesServices";
+import { Link } from "react-router-dom";
 
-export const Library = () => {
+export const Library = ({ user }) => {
   const [games, setGames] = useState([]);
 
-  //get users games
-  const userdata = JSON.parse(localStorage.getItem("QuestHall_user"));
-  const userId = userdata.id;
-
   useEffect(() => {
-    getUsersGames(userId).then(setGames);
-  }, [userId]);
-  
+    //get users games
+    getUsersGames(user?.id).then(setGames);
+  }, [user]);
+
   return (
-    <main className="bg-gray min-h-screen w-full pt-16">
-      <div>
-      {/*map through users games*/}
+    <div className="bg-gray min-h-screen w-full pt-16">
+      <div className="grid grid-cols-2 gap-8 p-10 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+        {/*map through users games*/}
         {games.map((game) => {
           return (
-            <section key={game.id} className="mt-15">
-              <div className="w-48 aspect-[2/3] overflow-hidden rounded-lg shadow-lg ml-15">
-                <img src={game.game.imageUrl} alt={game.game.name} className="w-full h-full object-cover" />
-                </div>
-            </section>
-         )
+            <div key={game.id}>
+              <div className="aspect-[2/3] w-48 w-full overflow-hidden rounded-lg shadow-lg transition delay-150 duration-300 ease-in-out hover:-translate-y-3">
+              <Link to={`/gameDetails/${game.id}`} key={game.id}>
+                <img
+                  src={game.game.imageUrl}
+                  alt={game.game.name}
+                  className="h-full w-full object-cover"
+                />
+                </Link>
+              </div>
+            </div>
+          );
         })}
       </div>
-    </main>
+    </div>
   );
 };
