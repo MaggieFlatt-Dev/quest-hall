@@ -12,7 +12,7 @@ export const NavBar = () => {
       </div>
       <div className="flex space-x-24 pt-2 pl-6">
         <div className="nav-link">
-          <Link to="/library">Library</Link>
+          <Link to="/games">Library</Link>
         </div>
         <div className="nav-link">
           <Link to="/taverns">Taverns</Link>

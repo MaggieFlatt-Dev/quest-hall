@@ -76,6 +76,10 @@ body {
     @apply w-48 font-serif py-3 px-4 bg-olive text-offWhite rounded-md hover:bg-mediumGreen transition duration-200 font-bold text-lg;
   }
 
+   .btn-four {
+    @apply font-serif py-2 px-3 bg-darkGreen text-offWhite border-2 border-darkGreen rounded-md hover:bg-mediumGreen hover:border-mediumGreen transition duration-200 font-bold text-sm;
+  }
+
 /*Input Fields*/
 .input-primary {
   @apply w-full font-serif px-4 py-2 border-2 border-stone rounded bg-offWhite text-darkGray focus:outline-none focus:border-olive placeholder-stone;
