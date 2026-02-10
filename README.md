@@ -87,13 +87,13 @@ quest-hall/
 │   │   ├── auth/
 │   │   │   ├── Login.jsx
 │   │   │   └── Register.jsx
-│   │   ├── nav/
-│   │   │   └── Navbar.jsx
 │   │   ├── games/
-│   │   │   ├── Library.jsx
 │   │   │   ├── GameDetails.jsx
+│   │   │   ├── Library.jsx
 │   │   │   ├── AddGame.jsx
 │   │   │   └── EditGame.jsx
+|   |   |── |── nav/
+│   │   │   └── Navbar.jsx
 │   │   ├── taverns/
 │   │   │   ├── Taverns.jsx
 │   │   │   └── TavernDetails.jsx
@@ -104,22 +104,19 @@ quest-hall/
 │   │   ├── userServices.jsx
 │   │   ├── gameServices.jsx
 │   │   └── tavernServices.jsx
-│   ├── api/
-│   │   └── database.json
 │   ├── App.jsx
 │   ├── App.css
 │   ├── index.css
 │   └── main.jsx
-├── public/
-│   └── vite.svg
+|── .gitignore
+├── eslint.config.js
 ├── index.html
+├── package-lock.json
+├── package.json
+├── prettier.config.js
+├── README.md
 ├── tailwind.config.js
 ├── vite.config.js
-├── eslint.config.js
-├── package.json
-├── package-lock.json
-├── README.md
-└── .gitignore
 ```
 
 ## User Stories

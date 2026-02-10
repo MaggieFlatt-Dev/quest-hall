@@ -8,7 +8,7 @@ export const Welcome = () => {
         <img src={logo} alt="Quest Hall Logo" className="logo-primary" />
       </div>
       <section className="flex flex-col items-center justify-center gap-10 pt-15 md:flex-row">
-        <Link to={"/library"}>
+        <Link to={"/games"}>
           <button className="btn-secondary bg-darkGreen hover:bg-mediumGreen">
             Your Library
           </button>
