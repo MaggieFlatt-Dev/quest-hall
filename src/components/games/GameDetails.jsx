@@ -4,15 +4,18 @@ import { useNavigate, useParams } from "react-router-dom";
 import { getPlatformByUserId } from "../services/platformServices";
 
 export const GameDetails = ({ user }) => {
+  //set state for game and platform, useParams of gameId
   const [game, setGame] = useState({});
   const [platform, setPlatform] = useState({});
   const { gameId } = useParams();
   const navigate = useNavigate();
 
+  //getGameById pass in gameId, then set game in state
   useEffect(() => {
     getGameById(gameId).then(setGame);
   }, [gameId]);
 
+  //getPlatformByUserId and pass in userId and gameId. An array will be returned so get 1st object then set to platform state
   useEffect(() => {
     getPlatformByUserId(user?.id, gameId).then((platformArray) => {
       const platformObj = platformArray[0];
@@ -21,6 +24,7 @@ export const GameDetails = ({ user }) => {
     });
   }, [user?.id, gameId]);
 
+  //deleteGame and pass in gameId then navigate back to game library
   const handleDelete = () => {
     deleteGame(gameId).then(() => {
       navigate("/games");
@@ -42,8 +46,8 @@ export const GameDetails = ({ user }) => {
               {game.description}
             </div>
             <div className="pb-4">
-              <span className="text-mediumGreen font-bold">Platform: </span>
-              {platform?.platform?.name}
+              <span className="text-mediumGreen font-bold">Platform User Owns Game On: </span>
+              {platform.platform?.name}
             </div>
             <div className="pb-4">
               <span className="text-mediumGreen font-bold">Game Type: </span>
@@ -52,7 +56,7 @@ export const GameDetails = ({ user }) => {
           </div>
         </div>
         <div className="flex flex-col justify-end gap-2">
-          <button className="btn-four" onClick={() => navigate("/EditGame")}>
+          <button className="btn-four" onClick={() => navigate(`edit`)}>
             Edit Game
           </button>
           <button className="btn-four" onClick={handleDelete}>
