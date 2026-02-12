@@ -25,8 +25,8 @@ export const ApplicationViews = () => {
       <Route element={<Layout />}>
         <Route path="games">
           <Route index element={<Library user={user} />} />
-          <Route path=":gameId" element={<GameDetails user={user} />} />
-          <Route path=":gameId/edit" element={<EditGame user={user} />} />
+          <Route path=":id" element={<GameDetails user={user} />} />
+          <Route path=":id/edit" element={<EditGame user={user} />} />
         </Route>
       </Route>
     </Routes>
