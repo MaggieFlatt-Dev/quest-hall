@@ -28,13 +28,16 @@ export const EditGame = ({ user }) => {
     getPlatforms().then(setPlatforms);
   }, []);
 
-  //handleInputChange - take whatever the state currently is ...copy and update just the field(s) that have changed
+  //handleInputChange - Make a copy of the game object, change one property based on what the user just typed, then save that copy back to state
   const handleInputChange = (event) => {
     const { name, value, type } = event.target;
-    setEditedGame((prev) => ({
-      ...prev,
-      [name]: type === "radio" ? parseInt(value) : value,
-    }));
+    const copy = { ...editedGame };
+    if (type === "radio") {
+      copy[name] = parseInt(value);
+    } else {
+      copy[event.target.id] = value;
+    }
+    setEditedGame(copy);
   };
 
   //updateGame and pass the editedGame and navigate back to gameDetails
