@@ -87,7 +87,7 @@ export const EditGame = ({ user }) => {
             </div>
             <div>
               <div className="text-mediumGreen text-xl font-bold">
-                Platform:
+                Game Platform:
               </div>
               {platforms.map((platform) => (
                 <label

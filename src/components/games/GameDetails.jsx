@@ -42,7 +42,7 @@ export const GameDetails = () => {
             </div>
             <div className="pb-4">
               <span className="text-mediumGreen font-bold">
-                Users Platform:{" "}
+                Game Platform:{" "}
               </span>
               {usersGame.platform?.name}
             </div>
