@@ -55,9 +55,7 @@ export const EditGame = ({ user }) => {
         />
         <div className="flex flex-1 flex-col gap-y-10">
           <div>
-            <div className="text-mediumGreen font-bold text-xl">
-              Title:{" "}
-            </div>
+            <div className="text-mediumGreen text-xl font-bold">Title: </div>
             {/*Make input fields for each item and use onChange to make a copy that can be edited */}
             <input
               name="title"
@@ -66,14 +64,12 @@ export const EditGame = ({ user }) => {
               value={editedGame?.title || ""}
               onChange={handleInputChange}
               required
-              className="text-charcoal border-mediumGreen w-full rounded-md border border-solid bg-offWhite text-4xl font-bold"
+              className="text-charcoal border-mediumGreen bg-offWhite w-full rounded-md border border-solid text-4xl font-bold"
             />
           </div>
           <div className="text-charcoal flex flex-col gap-y-4 text-base">
             <div>
-              <div
-                className="text-mediumGreen font-bold text-xl"
-              >
+              <div className="text-mediumGreen text-xl font-bold">
                 Description:{" "}
               </div>
               <textarea
@@ -87,11 +83,14 @@ export const EditGame = ({ user }) => {
               />
             </div>
             <div>
-              <div className="text-mediumGreen font-bold text-xl">
+              <div className="text-mediumGreen text-xl font-bold">
                 Platform:
               </div>
               {platforms.map((platform) => (
-                <label key={platform.id} className="flex items-center gap-2 mb-2">
+                <label
+                  key={platform.id}
+                  className="mb-2 flex items-center gap-2"
+                >
                   <input
                     type="radio"
                     name="platformId"
@@ -105,7 +104,7 @@ export const EditGame = ({ user }) => {
               ))}
             </div>
             <div>
-              <div className="text-mediumGreen font-bold text-xl">
+              <div className="text-mediumGreen text-xl font-bold">
                 Game Type:{" "}
               </div>
               <input
@@ -119,7 +118,7 @@ export const EditGame = ({ user }) => {
               />
             </div>
             <div>
-              <div className="text-mediumGreen font-bold text-xl">
+              <div className="text-mediumGreen text-xl font-bold">
                 Image URL:{" "}
               </div>
               <input
