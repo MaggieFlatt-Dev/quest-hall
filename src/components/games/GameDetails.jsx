@@ -9,7 +9,6 @@ export const GameDetails = ({ user }) => {
   //set state for game and platform, useParams of gameId
   const [usersGame, setUsersGame] = useState({});
   const { id } = useParams();
-  console.log(id);
   const navigate = useNavigate();
 
   //getGameById pass in gameId, then set game in state
@@ -43,7 +42,7 @@ export const GameDetails = ({ user }) => {
             </div>
             <div className="pb-4">
               <span className="text-mediumGreen font-bold">
-                Users Platform(s):{" "}
+                Users Platform:{" "}
               </span>
               {usersGame.platform?.name}
             </div>
