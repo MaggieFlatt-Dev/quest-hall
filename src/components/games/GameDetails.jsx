@@ -5,7 +5,7 @@ import {
   getUsersGameById,
 } from "../services/userGamesServices";
 
-export const GameDetails = ({ user }) => {
+export const GameDetails = () => {
   //set state for game and platform, useParams of gameId
   const [usersGame, setUsersGame] = useState({});
   const { id } = useParams();
