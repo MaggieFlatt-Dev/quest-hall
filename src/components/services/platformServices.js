@@ -1,3 +1,3 @@
-export const getPlatformByUserId = (userId, gameId) => {
-  return fetch(`http://localhost:8000/usersGames?userId=${userId}&gameId=${gameId}&_expand=platform`).then(res => res.json())
- }
+export const getPlatforms = () => { 
+  return fetch(`http://localhost:8000/platforms`).then((res) => res.json())
+}

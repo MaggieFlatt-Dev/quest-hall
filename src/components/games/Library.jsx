@@ -16,12 +16,12 @@ export const Library = ({ user }) => {
         {/*map through users games*/}
         {usersGames.map((usersGame) => {
           return (
-            <div key={usersGame.gameId}>
+            <div key={usersGame.id}>
               <div className="aspect-[2/3] w-48 w-full overflow-hidden rounded-lg shadow-lg transition delay-150 duration-300 ease-in-out hover:-translate-y-3">
-                <Link to={`/games/${usersGame.gameId}`} key={usersGame.gameId}>
+                <Link to={`/games/${usersGame.id}`}>
                 <img
-                  src={usersGame.game.imageUrl}
-                  alt={usersGame.game.name}
+                  src={usersGame.imageUrl}
+                  alt={usersGame.title}
                   className="h-full w-full object-cover"
                 />
                 </Link>

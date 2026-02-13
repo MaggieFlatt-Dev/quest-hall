@@ -102,6 +102,7 @@ quest-hall/
 │   │   └── Authorized.jsx
 │   ├── services/
 │   │   ├── userServices.jsx
+|   |   ├── platformServices.jsx
 │   │   ├── gameServices.jsx
 │   │   └── tavernServices.jsx
 │   ├── App.jsx
