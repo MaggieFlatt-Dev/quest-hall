@@ -25,3 +25,13 @@ export const updateUsersGame = (id, editedGame) => {
     body: JSON.stringify(gameToSend)
   })
 }
+
+export const createGame = (newGame) => {
+  return fetch(`http://localhost:8000/usersGames`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(newGame)
+  })
+ }
