@@ -235,6 +235,15 @@
       "description": "A third-person tactical shooter series centered on stealth-based gameplay, where players control elite OSS sniper Karl Fairburne behind enemy lines during World War II",
       "gameType": "Single Player",
       "platformId": 1
+    },
+    {
+      "userId": 1,
+      "title": "The Witcher 3",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Witcher_3_cover_art.jpg/250px-Witcher_3_cover_art.jpg",
+      "description": "You are Geralt of Rivia, a monster slayer known as a Witcher, navigating a war-torn, monster-infested fantasy world inspired by Polish and Slavic mythos.",
+      "gameType": "single player",
+      "platformId": 1,
+      "id": 21
     }
   ],
   "favorites": [],

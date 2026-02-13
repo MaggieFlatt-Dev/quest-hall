@@ -28,13 +28,16 @@ export const EditGame = ({ user }) => {
     getPlatforms().then(setPlatforms);
   }, []);
 
-  //handleInputChange - take whatever the state currently is ...copy and update just the field(s) that have changed
+  //handleInputChange - Make a copy of the game object, change one property based on what the user just typed, then save that copy back to state
   const handleInputChange = (event) => {
     const { name, value, type } = event.target;
-    setEditedGame((prev) => ({
-      ...prev,
-      [name]: type === "radio" ? parseInt(value) : value,
-    }));
+    const copy = { ...editedGame };
+    if (type === "radio") {
+      copy[name] = parseInt(value);
+    } else {
+      copy[event.target.id] = value;
+    }
+    setEditedGame(copy);
   };
 
   //updateGame and pass the editedGame and navigate back to gameDetails
@@ -55,9 +58,7 @@ export const EditGame = ({ user }) => {
         />
         <div className="flex flex-1 flex-col gap-y-10">
           <div>
-            <label htmlFor="title" className="text-mediumGreen font-bold">
-              Title:{" "}
-            </label>
+            <div className="text-mediumGreen text-xl font-bold">Title: </div>
             {/*Make input fields for each item and use onChange to make a copy that can be edited */}
             <input
               name="title"
@@ -66,17 +67,14 @@ export const EditGame = ({ user }) => {
               value={editedGame?.title || ""}
               onChange={handleInputChange}
               required
-              className="text-charcoal border-mediumGreen w-full rounded-md border border-solid bg-offWhite text-4xl font-bold"
+              className="text-charcoal border-mediumGreen bg-offWhite w-full rounded-md border border-solid text-4xl font-bold"
             />
           </div>
           <div className="text-charcoal flex flex-col gap-y-4 text-base">
             <div>
-              <label
-                htmlFor="description"
-                className="text-mediumGreen font-bold"
-              >
+              <div className="text-mediumGreen text-xl font-bold">
                 Description:{" "}
-              </label>
+              </div>
               <textarea
                 name="description"
                 type="text"
@@ -88,11 +86,14 @@ export const EditGame = ({ user }) => {
               />
             </div>
             <div>
-              <label htmlFor="platform" className="text-mediumGreen font-bold">
-                Users Platform:
-              </label>
+              <div className="text-mediumGreen text-xl font-bold">
+                Game Platform:
+              </div>
               {platforms.map((platform) => (
-                <label key={platform.id} className="flex items-center gap-2 mb-2">
+                <label
+                  key={platform.id}
+                  className="mb-2 flex items-center gap-2"
+                >
                   <input
                     type="radio"
                     name="platformId"
@@ -106,9 +107,9 @@ export const EditGame = ({ user }) => {
               ))}
             </div>
             <div>
-              <label htmlFor="gameType" className="text-mediumGreen font-bold">
+              <div className="text-mediumGreen text-xl font-bold">
                 Game Type:{" "}
-              </label>
+              </div>
               <input
                 name="gameType"
                 type="text"
@@ -120,9 +121,9 @@ export const EditGame = ({ user }) => {
               />
             </div>
             <div>
-              <label htmlFor="imageUrl" className="text-mediumGreen font-bold">
+              <div className="text-mediumGreen text-xl font-bold">
                 Image URL:{" "}
-              </label>
+              </div>
               <input
                 name="imageUrl"
                 type="text"
