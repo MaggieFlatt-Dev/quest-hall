@@ -75,15 +75,6 @@
   "gamesPlatforms": [],
   "usersGames": [
     {
-      "id": 1,
-      "userId": 1,
-      "title": "The Legend of Zelda: Breath of the Wild",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/The_Legend_of_Zelda_Breath_of_the_Wild.jpg/250px-The_Legend_of_Zelda_Breath_of_the_Wild.jpg",
-      "description": "An epic adventure in a vast open world",
-      "gameType": "Single Player",
-      "platformId": 5
-    },
-    {
       "id": 2,
       "userId": 2,
       "title": "Stardew Valley",
