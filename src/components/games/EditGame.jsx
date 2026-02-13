@@ -55,9 +55,9 @@ export const EditGame = ({ user }) => {
         />
         <div className="flex flex-1 flex-col gap-y-10">
           <div>
-            <label htmlFor="title" className="text-mediumGreen font-bold">
+            <div className="text-mediumGreen font-bold text-xl">
               Title:{" "}
-            </label>
+            </div>
             {/*Make input fields for each item and use onChange to make a copy that can be edited */}
             <input
               name="title"
@@ -71,12 +71,11 @@ export const EditGame = ({ user }) => {
           </div>
           <div className="text-charcoal flex flex-col gap-y-4 text-base">
             <div>
-              <label
-                htmlFor="description"
-                className="text-mediumGreen font-bold"
+              <div
+                className="text-mediumGreen font-bold text-xl"
               >
                 Description:{" "}
-              </label>
+              </div>
               <textarea
                 name="description"
                 type="text"
@@ -88,9 +87,9 @@ export const EditGame = ({ user }) => {
               />
             </div>
             <div>
-              <label htmlFor="platform" className="text-mediumGreen font-bold">
-                Users Platform:
-              </label>
+              <div className="text-mediumGreen font-bold text-xl">
+                Platform:
+              </div>
               {platforms.map((platform) => (
                 <label key={platform.id} className="flex items-center gap-2 mb-2">
                   <input
@@ -106,9 +105,9 @@ export const EditGame = ({ user }) => {
               ))}
             </div>
             <div>
-              <label htmlFor="gameType" className="text-mediumGreen font-bold">
+              <div className="text-mediumGreen font-bold text-xl">
                 Game Type:{" "}
-              </label>
+              </div>
               <input
                 name="gameType"
                 type="text"
@@ -120,9 +119,9 @@ export const EditGame = ({ user }) => {
               />
             </div>
             <div>
-              <label htmlFor="imageUrl" className="text-mediumGreen font-bold">
+              <div className="text-mediumGreen font-bold text-xl">
                 Image URL:{" "}
-              </label>
+              </div>
               <input
                 name="imageUrl"
                 type="text"
