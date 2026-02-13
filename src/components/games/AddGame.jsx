@@ -62,7 +62,7 @@ export const AddGame = ({ user }) => {
         className="aspect-[2/3] rounded-lg md:h-80 lg:h-96"
       />
       <fieldset>
-        <label>Title: </label>
+        <div>Title: </div>
         <input
           type="text"
           className="w-96 border"
@@ -75,7 +75,7 @@ export const AddGame = ({ user }) => {
         />
       </fieldset>
       <fieldset>
-        <label>Image Url: </label>
+        <div>Image Url: </div>
         <input
           type="text"
           className="w-96 border"
@@ -88,7 +88,7 @@ export const AddGame = ({ user }) => {
         />
       </fieldset>
       <fieldset>
-        <label>Description: </label>
+        <div>Description: </div>
         <input
           type="text"
           className="w-96 border"
@@ -101,9 +101,9 @@ export const AddGame = ({ user }) => {
         />
       </fieldset>
       <fieldset>
-        <label>Game Platform: </label>
+        <div>Game Platform: </div>
         {platforms.map((platform) => (
-          <label key={platform.id}>
+          <div key={platform.id}>
             <input
               type="radio"
               name="platformId"
@@ -116,11 +116,11 @@ export const AddGame = ({ user }) => {
               }}
             />
             {platform.name}
-          </label>
+          </div>
         ))}
       </fieldset>
       <fieldset>
-        <label>Game Type: </label>
+        <div>Game Type: </div>
         <input
           type="text"
           className="w-96 border"

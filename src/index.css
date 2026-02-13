@@ -87,7 +87,7 @@ body {
 
 /*Logo*/
 .logo-primary {
-  @apply w-[400px] h-[350px] mb-4;
+  @apply w-[400px] h-[330px] mb-4;
 }
 
 .logo-secondary {

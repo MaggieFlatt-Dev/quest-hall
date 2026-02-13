@@ -124,7 +124,7 @@
       "title": "Hades",
       "userId": 2,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/en/c/cc/Hades_cover_art.jpg",
-      "description": "A fast-paced roguelike dungeon crawler",
+      "description": "A fast-paced rogue like dungeon crawler",
       "gameType": "Single Player",
       "platformId": 5
     },
@@ -244,6 +244,51 @@
       "gameType": "single player",
       "platformId": 1,
       "id": 21
+    },
+    {
+      "userId": 1,
+      "title": "God Of War",
+      "imageUrl": "https://i5.walmartimages.com/seo/God-Of-War-Gaming-Poster-Playstation-Game-Cover-Size-24-x-36_0afa8249-ab35-4402-b6fb-c63e89258cb1.00a70bad27a540b20b14408fcafb3081.jpeg",
+      "description": "An acclaimed action-adventure franchise following Kratos, a Spartan demigod who battles mythological pantheons",
+      "gameType": "single player",
+      "platformId": 3,
+      "id": 22
+    },
+    {
+      "userId": 1,
+      "title": "Dead By Daylight",
+      "imageUrl": "https://cdn1.epicgames.com/spt-assets/2b2299be8ae84d679d4dc57c55af1510/dead-by-daylight-1db3d.jpg",
+      "description": "multiplayer horror game where one player takes the role of a savage killer and the other four play as survivors attempting to escape",
+      "gameType": "Multiplayer",
+      "platformId": 1,
+      "id": 23
+    },
+    {
+      "userId": 1,
+      "title": "Paper Mario: The Origami King",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpCL8TIr5kvWil8I6g0cGmbumj24Ocm3Iwlm72THtriN3RPzCHRKclMVgku9SszO6UNa21MA&s=10",
+      "description": "a comedy-filled, action-adventure RPG for the Nintendo Switch where Mario and his partner, Olivia, battle the Folded Soldiers to stop King Olly from turning the Mushroom Kingdom into origami",
+      "gameType": "single Player",
+      "platformId": 5,
+      "id": 24
+    },
+    {
+      "userId": 1,
+      "title": "It Takes Two",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/a/aa/It_Takes_Two_cover_art.png",
+      "description": "A cooperative adventure game for two players",
+      "gameType": "Co-op",
+      "platformId": 5,
+      "id": 25
+    },
+    {
+      "userId": 1,
+      "title": "Hades",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/c/cc/Hades_cover_art.jpg",
+      "description": "A fast-paced rogue like dungeon crawler",
+      "gameType": "Single Player",
+      "platformId": 5,
+      "id": 26
     }
   ],
   "favorites": [],

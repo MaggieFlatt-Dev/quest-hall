@@ -28,7 +28,7 @@ export const EditGame = ({ user }) => {
     getPlatforms().then(setPlatforms);
   }, []);
 
-  //handleInputChange - Make a copy of the game object, change one property based on what the user just typed, then save that copy back to state
+  //handleInputChange - Make a copy of the game object, change one property based on what the user just typed, then save that copy back to state. If the type is radio, convert the value to a number and store it in the property "name"
   const handleInputChange = (event) => {
     const { name, value, type } = event.target;
     const copy = { ...editedGame };
@@ -40,7 +40,7 @@ export const EditGame = ({ user }) => {
     setEditedGame(copy);
   };
 
-  //updateGame and pass the editedGame and navigate back to gameDetails
+  //updateGame and pass the editedGame + id and navigate back to gameDetails
   //passedEdited game passes platform too, need to delete the platform before sending back to database
   const handleUpdateUsersGame = () => {
     updateUsersGame(id, editedGame).then(() => {
@@ -90,7 +90,7 @@ export const EditGame = ({ user }) => {
                 Game Platform:
               </div>
               {platforms.map((platform) => (
-                <label
+                <div
                   key={platform.id}
                   className="mb-2 flex items-center gap-2"
                 >
@@ -103,7 +103,7 @@ export const EditGame = ({ user }) => {
                     required
                   />
                   {platform.name}
-                </label>
+                </div>
               ))}
             </div>
             <div>
