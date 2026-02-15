@@ -111,15 +111,6 @@
       "platformId": 2
     },
     {
-      "id": 6,
-      "userId": 1,
-      "title": "Among Us",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Among_Us_cover_art.jpg/250px-Among_Us_cover_art.jpg",
-      "description": "A social deduction game for groups",
-      "gameType": "Multiplayer",
-      "platformId": 1
-    },
-    {
       "id": 7,
       "title": "Hades",
       "userId": 2,
@@ -289,6 +280,24 @@
       "gameType": "Single Player",
       "platformId": 5,
       "id": 26
+    },
+    {
+      "userId": 1,
+      "title": "Among Us",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Among_Us_cover_art.jpg/250px-Among_Us_cover_art.jpg",
+      "description": "A social deduction game for groups",
+      "gameType": "Multiplayer",
+      "platformId": 1,
+      "id": 27
+    },
+    {
+      "userId": 1,
+      "title": "Red Dead Redemption II",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Red_Dead_Redemption_II.jpg/250px-Red_Dead_Redemption_II.jpg",
+      "description": "Players control Arthur Morgan, a senior gun-slinger in the Van der Linde gang struggling to survive against government agents, rival gangs, and internal turmoil",
+      "gameType": "single player",
+      "platformId": 1,
+      "id": 28
     }
   ],
   "favorites": [],

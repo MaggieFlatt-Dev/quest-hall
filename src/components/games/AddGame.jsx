@@ -53,94 +53,103 @@ export const AddGame = ({ user }) => {
   };
 
   return (
-    <form>
-      <div className="py-15 text-xl font-bold">For Greg! :D</div>
-      <h2>Add Game To Library </h2>
-      <img
-        src={usersGame.imageUrl || null}
-        alt="preview"
-        className="aspect-[2/3] rounded-lg md:h-80 lg:h-96"
-      />
-      <fieldset>
-        <div>Title: </div>
-        <input
-          type="text"
-          className="w-96 border"
-          placeholder="Title of game"
-          onChange={(event) => {
-            const gameCopy = { ...usersGame };
-            gameCopy.title = event.target.value;
-            setUsersGame(gameCopy);
-          }}
+    <form className="bg-gray min-h-screen w-full py-16">
+      <div className="bg-stone border-olive m-10 flex flex-col gap-8 rounded-lg border border-4 border-solid p-5 md:flex-row">
+        <img
+          src={usersGame.imageUrl || null}
+          alt="preview"
+          className="aspect-[2/3] rounded-lg md:h-80 lg:h-96"
         />
-      </fieldset>
-      <fieldset>
-        <div>Image Url: </div>
-        <input
-          type="text"
-          className="w-96 border"
-          placeholder="Game image url"
-          onChange={(event) => {
-            const gameCopy = { ...usersGame };
-            gameCopy.imageUrl = event.target.value;
-            setUsersGame(gameCopy);
-          }}
-        />
-      </fieldset>
-      <fieldset>
-        <div>Description: </div>
-        <input
-          type="text"
-          className="w-96 border"
-          placeholder="Brief description of game"
-          onChange={(event) => {
-            const gameCopy = { ...usersGame };
-            gameCopy.description = event.target.value;
-            setUsersGame(gameCopy);
-          }}
-        />
-      </fieldset>
-      <fieldset>
-        <div>Game Platform: </div>
-        {platforms.map((platform) => (
-          <div key={platform.id}>
+        <div className="flex flex-1 flex-col gap-y-10">
+          <fieldset>
+            <div className="text-mediumGreen text-xl font-bold">Title: </div>
             <input
-              type="radio"
-              name="platformId"
-              value={platform.id}
-              className="mb-2 gap-2"
+              type="text"
+              placeholder="Title of game"
+              className="text-charcoal border-mediumGreen bg-offWhite w-full rounded-md border border-solid text-4xl font-bold"
               onChange={(event) => {
                 const gameCopy = { ...usersGame };
-                gameCopy.platformId = parseInt(event.target.value);
+                gameCopy.title = event.target.value;
                 setUsersGame(gameCopy);
               }}
             />
-            {platform.name}
-          </div>
-        ))}
-      </fieldset>
-      <fieldset>
-        <div>Game Type: </div>
-        <input
-          type="text"
-          className="w-96 border"
-          placeholder="multiplayer, co-op, single player, etc."
-          onChange={(event) => {
-            const gameCopy = { ...usersGame };
-            gameCopy.gameType = event.target.value;
-            setUsersGame(gameCopy);
-          }}
-        />
-      </fieldset>
-      <button
-        className=""
-        type="button"
-        onClick={() => {
-          handleSave();
-        }}
-      >
-        Add Game
-      </button>
+          </fieldset>
+          <fieldset>
+            <div className="text-mediumGreen text-xl font-bold">
+              Description:{" "}
+            </div>
+            <input
+              type="text"
+              placeholder="Brief description of game"
+              className="bg-offWhite w-full rounded-md border border-solid"
+              onChange={(event) => {
+                const gameCopy = { ...usersGame };
+                gameCopy.description = event.target.value;
+                setUsersGame(gameCopy);
+              }}
+            />
+          </fieldset>
+          <fieldset>
+            <div className="text-mediumGreen text-xl font-bold">
+              Game Platform:{" "}
+            </div>
+            {platforms.map((platform) => (
+              <div key={platform.id} className="mb-2 flex items-center gap-2">
+                <input
+                  type="radio"
+                  name="platformId"
+                  value={platform.id}
+                  onChange={(event) => {
+                    const gameCopy = { ...usersGame };
+                    gameCopy.platformId = parseInt(event.target.value);
+                    setUsersGame(gameCopy);
+                  }}
+                />
+                {platform.name}
+              </div>
+            ))}
+          </fieldset>
+          <fieldset>
+            <div className="text-mediumGreen text-xl font-bold">
+              Game Type:{" "}
+            </div>
+            <input
+              type="text"
+              placeholder="multiplayer, co-op, single player, etc."
+              className="bg-offWhite w-full rounded-md border border-solid"
+              onChange={(event) => {
+                const gameCopy = { ...usersGame };
+                gameCopy.gameType = event.target.value;
+                setUsersGame(gameCopy);
+              }}
+            />
+          </fieldset>
+          <fieldset>
+            <div className="text-mediumGreen text-xl font-bold">
+              Image Url:{" "}
+            </div>
+            <input
+              type="text"
+              placeholder="Game image url"
+              className="bg-offWhite w-full rounded-md border border-solid"
+              onChange={(event) => {
+                const gameCopy = { ...usersGame };
+                gameCopy.imageUrl = event.target.value;
+                setUsersGame(gameCopy);
+              }}
+            />
+          </fieldset>
+          <button
+            className="btn-four"
+            type="button"
+            onClick={() => {
+              handleSave();
+            }}
+          >
+            Add Game
+          </button>
+        </div>
+      </div>
     </form>
   );
 };
