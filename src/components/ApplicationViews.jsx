@@ -7,6 +7,7 @@ import { getUserById } from "./services/userServices";
 import { GameDetails } from "./games/GameDetails";
 import { EditGame } from "./games/EditGame";
 import { AddGame } from "./games/AddGame";
+import { Taverns } from "./taverns/Taverns";
 
 export const ApplicationViews = () => {
   const [user, setUser] = useState();
@@ -21,6 +22,7 @@ export const ApplicationViews = () => {
   return (
     <Routes>
       <Route index element={<Welcome />} />
+      <Route path="taverns" element={<Taverns user={user} />} />
 
       {/*All other routes with NavBar*/}
       <Route element={<Layout />}>
