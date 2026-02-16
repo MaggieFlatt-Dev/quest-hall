@@ -14,9 +14,11 @@ export const Welcome = () => {
             Your Library
           </button>
         </Link>
-        <button className="btn-secondary bg-darkGreen hover:bg-mediumGreen">
-          Taverns
-        </button>
+        <Link to={"/taverns"}>
+          <button className="btn-secondary bg-darkGreen hover:bg-mediumGreen">
+            Taverns
+          </button>
+        </Link>
       </section>
     </div>
   );

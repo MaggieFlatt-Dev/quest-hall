@@ -69,7 +69,7 @@ body {
   }
 
   .btn-secondary {
-    @apply w-48 font-serif py-3 px-4 bg-darkGreen text-offWhite border-2 border-darkGreen rounded-md hover:bg-mediumGreen hover:border-mediumGreen transition duration-200 font-bold text-lg;
+    @apply w-48 font-serif py-3 px-4 bg-darkGreen text-offWhite border-2 border-darkGreen rounded-md hover:bg-mediumGreen hover:border-mediumGreen transition duration-200 font-bold text-lg shadow-2xl shadow-black/50;
   }
   
   .btn-three {
@@ -78,6 +78,10 @@ body {
 
    .btn-four {
     @apply font-serif py-2 px-3 bg-darkGreen text-offWhite border-2 border-darkGreen rounded-md hover:bg-mediumGreen hover:border-mediumGreen transition duration-200 font-bold text-sm;
+  }
+
+  .btn-tavern {
+    @apply relative rounded-t-md rounded-b-lg border-4 border-silver bg-darkGreen px-8 py-16 font-serif font-bold tracking-wider text-offWhite uppercase shadow-2xl shadow-black/50 transition-all duration-150 ease-in-out hover:bg-mediumGreen hover:text-white
   }
 
 /*Input Fields*/
