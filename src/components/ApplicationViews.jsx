@@ -33,7 +33,7 @@ export const ApplicationViews = () => {
           <Route path=":id/edit" element={<EditGame user={user} />} />
         </Route>
         <Route path="addGame" element={<AddGame user={user} />} />
-        <Route path="taverns/:id" element={<TavernDetails user={user} />} />
+        <Route path="taverns/:tavernId" element={<TavernDetails user={user} />} />
       </Route>
     </Routes>
   );
