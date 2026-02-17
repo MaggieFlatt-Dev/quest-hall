@@ -6,7 +6,7 @@
       "lastName": "Flatt",
       "username": "Mortaeus",
       "email": "grantflatt@yahoo.com",
-      "tavernId": 1
+      "tavernId": 3
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "lastName": "Phelps",
       "username": "Han",
       "email": "chris@email.com",
-      "tavernId": 1
+      "tavernId": 3
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "lastName": "Davis",
       "username": "Chronos",
       "email": "david@email.com",
-      "tavernId": 1
+      "tavernId": 3
     },
     {
       "id": 4,
@@ -30,7 +30,7 @@
       "lastName": "Wilson",
       "username": "Lola",
       "email": "Courtney@email.com",
-      "tavernId": 2
+      "tavernId": 1
     },
     {
       "id": 5,
@@ -38,7 +38,7 @@
       "lastName": "Seagraves",
       "username": "MrVoid92",
       "email": "dakota@email.com",
-      "tavernId": 3
+      "tavernId": 1
     }
   ],
   "games": [
