@@ -29,7 +29,7 @@
       "firstName": "Courtney",
       "lastName": "Wilson",
       "username": "Lola",
-      "email": "Courtney@email.com",
+      "email": "courtney@email.com",
       "tavernId": 1
     },
     {
@@ -298,6 +298,96 @@
       "gameType": "single player",
       "platformId": 1,
       "id": 28
+    },
+    {
+      "userId": 2,
+      "title": "Fortnite",
+      "imageUrl": "https://i.pinimg.com/474x/5b/52/4d/5b524dcc589c3a9f0098884c2ff21d32.jpg",
+      "description": "A fast-paced battle royale game",
+      "gameType": "Multiplayer",
+      "platformId": 1,
+      "id": 29
+    },
+    {
+      "userId": 2,
+      "title": "Return To Moria",
+      "imageUrl": "https://cdn1.epicgames.com/spt-assets/2ae760629a384d5199cbefc612db7ac8/the-lord-of-the-rings-return-to-moria-tr0c9.png",
+      "description": "Explore the Mines of Moria in Lord of the Rings: Return to Moria. Repair statues, collect gems, and gather resources to craft tools and weapons.",
+      "gameType": "Multiplayer",
+      "platformId": 1,
+      "id": 30
+    },
+    {
+      "userId": 2,
+      "title": "For Honor ",
+      "imageUrl": "https://store.ubisoft.com/on/demandware.static/-/Sites-masterCatalog/default/dw78fb6da2/images/large/659ea90829c01c38968dce19.jpg",
+      "description": "A third-person multiplayer melee action game where you battle as the most influential warriors from throughout history",
+      "gameType": "Multiplayer",
+      "platformId": 1,
+      "id": 31
+    },
+    {
+      "userId": 2,
+      "title": "Dead By Daylight",
+      "imageUrl": "https://cdn1.epicgames.com/spt-assets/2b2299be8ae84d679d4dc57c55af1510/dead-by-daylight-1db3d.jpg",
+      "description": "multiplayer horror game where one player takes the role of a savage killer and the other four play as survivors attempting to escape",
+      "gameType": "Multiplayer",
+      "platformId": 1,
+      "id": 32
+    },
+    {
+      "userId": 3,
+      "title": "Fortnite",
+      "imageUrl": "https://i.pinimg.com/474x/5b/52/4d/5b524dcc589c3a9f0098884c2ff21d32.jpg",
+      "description": "A fast-paced battle royale game",
+      "gameType": "Multiplayer",
+      "platformId": 1,
+      "id": 33
+    },
+    {
+      "userId": 3,
+      "title": "Return to Moria",
+      "imageUrl": "https://cdn1.epicgames.com/spt-assets/2ae760629a384d5199cbefc612db7ac8/the-lord-of-the-rings-return-to-moria-tr0c9.png",
+      "description": "Explore the Mines of Moria in Lord of the Rings: Return to Moria. Repair statues, collect gems, and gather resources to craft tools and weapons.",
+      "gameType": "Multiplayer",
+      "platformId": 1,
+      "id": 34
+    },
+    {
+      "userId": 3,
+      "title": "Among Us",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Among_Us_cover_art.jpg/250px-Among_Us_cover_art.jpg",
+      "description": "A social deduction game for groups",
+      "gameType": "Multiplayer",
+      "platformId": 1,
+      "id": 35
+    },
+    {
+      "userId": 4,
+      "title": "Stardew Valley",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Logo_of_Stardew_Valley.png/250px-Logo_of_Stardew_Valley.png",
+      "description": "A relaxing farming simulation game",
+      "gameType": "Single Player",
+      "platformId": 1,
+      "id": 36
+    },
+    {
+      "userId": 4,
+      "title": "Overcooked! 2",
+      "imageUrl": "https://cdn1.epicgames.com/salesEvent/salesEvent/egs-overcooked2-tall_1200x1600-fbae89fad70c05cd1979316f620e64a9",
+      "description": "A chaotic cooperative cooking game",
+      "gameType": "Co-op",
+      "platformId": 1,
+      "id": 37
+    },
+    {
+      "userId": 4,
+      "title": "Among Us",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Among_Us_cover_art.jpg/250px-Among_Us_cover_art.jpg",
+      "description": "A social deduction game for groups",
+      "gameType": "Multiplayer",
+      "platformId": 1,
+      "id": 38
     }
   ],
   "favorites": [],
