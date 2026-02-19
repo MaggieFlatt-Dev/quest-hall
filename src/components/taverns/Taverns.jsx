@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import { useEffect, useState } from "react";
-import { getTavernsById } from "../services/tavernsServices";
 import dragonLogo from "../../assets/dragonLogo.png";
 import mysticLogo from "../../assets/mysticLogo.png";
 import toastedLogo from "../../assets/toastedLogo.png";
+import { getTaverns } from "../services/tavernsServices";
 
 export const Taverns = () => {
   const [taverns, setTaverns] = useState([]);
@@ -16,7 +16,7 @@ export const Taverns = () => {
   };
 
   useEffect(() => {
-    getTavernsById().then(setTaverns);
+    getTaverns().then(setTaverns);
   }, []);
 
   return (
