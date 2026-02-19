@@ -77,7 +77,10 @@ export const TavernDetails = ({ user }) => {
       <div className="text-offWhite flex justify-center text-3xl font-bold">
         {tavern.name}
       </div>
-      <div className="text-offWhite flex justify-center gap-2">
+      <div className="text-offWhite flex justify-center text-sm pt-2">
+        Find Your Next Quest 
+      </div>
+      <div className="text-offWhite flex justify-center gap-2 pt-4">
         <div>Patrons:</div>
         {tavernUsers.map((tavernUser) => tavernUser.username).join(", ")}
       </div>
@@ -93,7 +96,7 @@ export const TavernDetails = ({ user }) => {
                 />
               </div>
               <p className="text-offWhite text-md pt-3">
-                Owned By:{" "}
+                Patron:{" "}
                 {finalSharedGame
                   .map((game) => {
                     const owner = tavernUsers.find(
