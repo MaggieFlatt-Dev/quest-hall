@@ -6,7 +6,7 @@
       "lastName": "Flatt",
       "username": "Mortaeus",
       "email": "grantflatt@yahoo.com",
-      "tavernId": 3
+      "tavernId": null
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "lastName": "Phelps",
       "username": "Han",
       "email": "chris@email.com",
-      "tavernId": 1
+      "tavernId": 3
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "lastName": "Davis",
       "username": "Chronos",
       "email": "david@email.com",
-      "tavernId": 1
+      "tavernId": 3
     },
     {
       "id": 4,
@@ -30,7 +30,7 @@
       "lastName": "Wilson",
       "username": "Lola",
       "email": "Courtney@email.com",
-      "tavernId": 2
+      "tavernId": 1
     },
     {
       "id": 5,
@@ -38,7 +38,7 @@
       "lastName": "Seagraves",
       "username": "MrVoid92",
       "email": "dakota@email.com",
-      "tavernId": 3
+      "tavernId": 1
     }
   ],
   "games": [
@@ -298,6 +298,87 @@
       "gameType": "single player",
       "platformId": 1,
       "id": 28
+    },
+    {
+      "userId": 2,
+      "title": "For Honor",
+      "imageUrl": "https://store.ubisoft.com/on/demandware.static/-/Sites-masterCatalog/default/dw78fb6da2/images/large/659ea90829c01c38968dce19.jpg",
+      "description": "A third-person multiplayer melee action game where you battle as the most influential warriors from throughout history",
+      "gameType": "Multiplayer",
+      "platformId": 1,
+      "id": 29
+    },
+    {
+      "userId": 2,
+      "title": "Among Us",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Among_Us_cover_art.jpg/250px-Among_Us_cover_art.jpg",
+      "description": "A social deduction game for groups",
+      "gameType": "Multiplayer",
+      "platformId": 1,
+      "id": 30
+    },
+    {
+      "userId": 3,
+      "title": "Among Us",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Among_Us_cover_art.jpg/250px-Among_Us_cover_art.jpg",
+      "description": "A social deduction game for groups",
+      "gameType": "Multiplayer",
+      "platformId": 1,
+      "id": 31
+    },
+    {
+      "userId": 1,
+      "title": "Return to Moria",
+      "imageUrl": "https://cdn1.epicgames.com/spt-assets/2ae760629a384d5199cbefc612db7ac8/the-lord-of-the-rings-return-to-moria-tr0c9.png",
+      "description": "Explore the Mines of Moria in Lord of the Rings: Return to Moria. Repair statues, collect gems, and gather resources to craft tools and weapons.",
+      "gameType": "Multiplayer",
+      "platformId": 1,
+      "id": 32
+    },
+    {
+      "userId": 2,
+      "title": "Return to Moria",
+      "imageUrl": "https://cdn1.epicgames.com/spt-assets/2ae760629a384d5199cbefc612db7ac8/the-lord-of-the-rings-return-to-moria-tr0c9.png",
+      "description": "Explore the Mines of Moria in Lord of the Rings: Return to Moria. Repair statues, collect gems, and gather resources to craft tools and weapons.",
+      "gameType": "Multiplayer",
+      "platformId": 1,
+      "id": 33
+    },
+    {
+      "userId": 3,
+      "title": "Return to Moria",
+      "imageUrl": "https://cdn1.epicgames.com/spt-assets/2ae760629a384d5199cbefc612db7ac8/the-lord-of-the-rings-return-to-moria-tr0c9.png",
+      "description": "Explore the Mines of Moria in Lord of the Rings: Return to Moria. Repair statues, collect gems, and gather resources to craft tools and weapons.",
+      "gameType": "Multiplayer",
+      "platformId": 1,
+      "id": 34
+    },
+    {
+      "userId": 3,
+      "title": "Valheim",
+      "imageUrl": "https://preview.redd.it/cb6vhjj30ap61.gif?format=png8&s=7fede5f0fb30bd3aa14dfdb16eb56e8e8412dedc",
+      "description": "A Norse-inspired survival game",
+      "gameType": "Multiplayer",
+      "platformId": 2,
+      "id": 35
+    },
+    {
+      "userId": 4,
+      "title": "Among Us",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Among_Us_cover_art.jpg/250px-Among_Us_cover_art.jpg",
+      "description": "A social deduction game for groups",
+      "gameType": "Multiplayer",
+      "platformId": 1,
+      "id": 36
+    },
+    {
+      "userId": 5,
+      "title": "Among Us",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Among_Us_cover_art.jpg/250px-Among_Us_cover_art.jpg",
+      "description": "A social deduction game for groups",
+      "gameType": "Multiplayer",
+      "platformId": 1,
+      "id": 37
     }
   ],
   "favorites": [],
