@@ -96,7 +96,7 @@ export const TavernDetails = ({ user }) => {
                 />
               </div>
               <p className="text-offWhite text-md pt-3">
-                Patron:{" "}
+                Patrons Who Own Game:{" "}
                 {finalSharedGame
                   .map((game) => {
                     const owner = tavernUsers.find(
