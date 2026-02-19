@@ -388,6 +388,15 @@
       "gameType": "Multiplayer",
       "platformId": 1,
       "id": 38
+    },
+    {
+      "userId": 1,
+      "title": "Fortnite",
+      "imageUrl": "https://i.pinimg.com/474x/5b/52/4d/5b524dcc589c3a9f0098884c2ff21d32.jpg",
+      "description": "A fast-paced battle royale game",
+      "gameType": "Multiplayer",
+      "platformId": 1,
+      "id": 39
     }
   ],
   "favorites": [],
