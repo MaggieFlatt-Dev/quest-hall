@@ -12,7 +12,12 @@ Table games {
     title varchar
     imageUrl varchar
     description varchar
-    gameType varchar
+    gameTypeId int [ref: > gameTypes.id]
+}
+
+Table gameTypes {
+    id int [pk]
+    type varchar
 }
 
 Table usersFavorites {
@@ -23,8 +28,7 @@ Table usersFavorites {
 
 Table platforms {
     id int [pk]
-    name varchar
-    
+    name varchar   
 }
 
 Table gamesPlatforms {
@@ -39,7 +43,7 @@ Table usersGames {
     title varchar
     imageUrl varchar
     description varchar
-    gameType varchar
+    gameTypeId int [ref: > gameTypes.id]
     platformId int [ref: > platforms.id]
     gameId int [ref: > games.id]
 }

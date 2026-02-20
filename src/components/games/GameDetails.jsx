@@ -48,7 +48,7 @@ export const GameDetails = () => {
             </div>
             <div className="pb-4">
               <span className="text-mediumGreen font-bold">Game Type: </span>
-              {usersGame.gameType}
+              {usersGame.gameType?.type}
             </div>
           </div>
         </div>

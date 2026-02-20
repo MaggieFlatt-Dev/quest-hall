@@ -35,7 +35,7 @@ export const TavernDetails = ({ user }) => {
 
         //Then find the shared multiplayer ones
         const multiplayerGames = allGames.filter(
-          (game) => game.gameType === "Multiplayer",
+          (game) => game.gameTypeId === 3,
         );
 
         //Group games by title

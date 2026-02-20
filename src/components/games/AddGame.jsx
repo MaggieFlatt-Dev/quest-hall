@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { getPlatforms } from "../services/platformServices";
 import { useNavigate } from "react-router-dom";
 import { createGame } from "../services/userGamesServices";
+import { getGameTypes } from "../services/gameServices";
 
 export const AddGame = ({ user }) => {
   //Initialize a form state with empty game object
@@ -16,10 +17,14 @@ export const AddGame = ({ user }) => {
   //fetch platforms
   const [platforms, setPlatforms] = useState([]);
 
+  //fetch gameTypes
+  const [gameTypes, setGameTypes] = useState([]);
+
   const navigate = useNavigate();
 
   useEffect(() => {
     getPlatforms().then(setPlatforms);
+    getGameTypes().then(setGameTypes);
   }, []);
 
   //Validate that all required fields are filled
@@ -113,16 +118,22 @@ export const AddGame = ({ user }) => {
             <div className="text-mediumGreen text-xl font-bold">
               Game Type:{" "}
             </div>
-            <input
-              type="text"
-              placeholder="multiplayer, co-op, single player, etc."
-              className="bg-offWhite w-full rounded-md border border-solid"
+            <select
+              value={usersGame.gameType || ""}
               onChange={(event) => {
                 const gameCopy = { ...usersGame };
                 gameCopy.gameType = event.target.value;
                 setUsersGame(gameCopy);
               }}
-            />
+              className="bg-offWhite w-full rounded-md border border-solid"
+            >
+              <option value="">Select A Game Type</option>
+              {gameTypes.map((gameType) => (
+                <option key={gameType.id} value={gameType.id}>
+                  {gameType.type}
+                </option>
+              ))}
+            </select>
           </fieldset>
           <fieldset>
             <div className="text-mediumGreen text-xl font-bold">

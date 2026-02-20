@@ -5,11 +5,13 @@ import {
   updateUsersGame,
 } from "../services/userGamesServices";
 import { getPlatforms } from "../services/platformServices";
+import { getGameTypes } from "../services/gameServices";
 
 export const EditGame = ({ user }) => {
   //set state
   const [editedGame, setEditedGame] = useState({});
   const [platforms, setPlatforms] = useState([]);
+  const [gameTypes, setGameTypes] = useState([]);
   const { id } = useParams();
   const navigate = useNavigate();
 
@@ -23,19 +25,22 @@ export const EditGame = ({ user }) => {
     });
   }, [id]);
 
-  //fetch all platforms
+  //fetch all platforms & gameTypes
   useEffect(() => {
     getPlatforms().then(setPlatforms);
+    getGameTypes().then(setGameTypes);
   }, []);
 
   //handleInputChange - Make a copy of the game object, change one property based on what the user just typed, then save that copy back to state. If the type is radio, convert the value to a number and store it in the property "name"
   const handleInputChange = (event) => {
-    const { name, value, type } = event.target;
+    const { name, value, type, id } = event.target;
     const copy = { ...editedGame };
     if (type === "radio") {
       copy[name] = parseInt(value);
+    } else if (type === "select-one") {
+      copy[name] = parseInt(value);
     } else {
-      copy[event.target.id] = value;
+      copy[id] = value;
     }
     setEditedGame(copy);
   };
@@ -90,10 +95,7 @@ export const EditGame = ({ user }) => {
                 Game Platform:
               </div>
               {platforms.map((platform) => (
-                <div
-                  key={platform.id}
-                  className="mb-2 flex items-center gap-2"
-                >
+                <div key={platform.id} className="mb-2 flex items-center gap-2">
                   <input
                     type="radio"
                     name="platformId"
@@ -110,15 +112,21 @@ export const EditGame = ({ user }) => {
               <div className="text-mediumGreen text-xl font-bold">
                 Game Type:{" "}
               </div>
-              <input
-                name="gameType"
-                type="text"
+              <select
+                name="gameTypeId"
                 disabled={!isCreator}
-                value={editedGame?.gameType || ""}
+                value={editedGame?.gameTypeId || ""}
                 onChange={handleInputChange}
                 required
                 className="bg-offWhite w-full rounded-md border border-solid"
-              />
+              >
+                <option value="">Select A Game Type</option>
+                {gameTypes.map((gameType) => (
+                  <option key={gameType.id} value={gameType.id}>
+                    {gameType.type}
+                  </option>
+                ))}
+              </select>
             </div>
             <div>
               <div className="text-mediumGreen text-xl font-bold">

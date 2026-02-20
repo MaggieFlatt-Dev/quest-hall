@@ -38,7 +38,7 @@
       "lastName": "Seagraves",
       "username": "MrVoid92",
       "email": "dakota@email.com",
-      "tavernId": 1
+      "tavernId": null
     }
   ],
   "games": [
@@ -47,7 +47,7 @@
       "title": "Halo 3",
       "imageUrl": "https://preview.redd.it/which-halo-game-had-the-best-cover-art-and-how-would-you-v0-3898yzdik5ef1.jpg?width=640&crop=smart&auto=webp&s=c62d0b079c74bd341d77a99dc2bcfd52900688ff",
       "description": "A first-person shooter by Bungie that concludes the original trilogy, focusing on Master Chief’s fight to stop the Covenant and the Flood",
-      "gameType": "Multiplayer"
+      "gameTypeId": 3
     }
   ],
   "platforms": [
@@ -80,7 +80,7 @@
       "title": "Stardew Valley",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Logo_of_Stardew_Valley.png/250px-Logo_of_Stardew_Valley.png",
       "description": "A relaxing farming simulation game",
-      "gameType": "Single Player",
+      "gameTypeId": 1,
       "platformId": 1
     },
     {
@@ -89,7 +89,7 @@
       "title": "It Takes Two",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/en/a/aa/It_Takes_Two_cover_art.png",
       "description": "A cooperative adventure game for two players",
-      "gameType": "Co-op",
+      "gameTypeId": 2,
       "platformId": 2
     },
     {
@@ -98,7 +98,7 @@
       "title": "Minecraft",
       "imageUrl": "https://preview.redd.it/4lv9qrcjjui71.jpg?width=640&crop=smart&auto=webp&s=b9f3331e7b92555ca53ec801c820415262cb3fb9",
       "description": "Build, explore, and survive in endless worlds",
-      "gameType": "Multiplayer",
+      "gameTypeId": 3,
       "platformId": 1
     },
     {
@@ -107,7 +107,7 @@
       "title": "Monster Hunter",
       "imageUrl": "https://m.media-amazon.com/images/M/MV5BMTkwZjA1YjEtY2VjOC00ZDY2LWIzYWYtNzFmOWFiZGY2MWFiXkEyXkFqcGc@._V1_.jpg",
       "description": "An action-RPG series where players take on the role of a hunter in a fantasy world, tracking and battling massive creatures to protect ecosystems",
-      "gameType": "Multiplayer",
+      "gameTypeId": 3,
       "platformId": 2
     },
     {
@@ -116,7 +116,7 @@
       "userId": 2,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/en/c/cc/Hades_cover_art.jpg",
       "description": "A fast-paced rogue like dungeon crawler",
-      "gameType": "Single Player",
+      "gameTypeId": 1,
       "platformId": 5
     },
     {
@@ -125,7 +125,7 @@
       "title": "Portal 2",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Portal2cover.jpg/250px-Portal2cover.jpg",
       "description": "A puzzle game with portal mechanics",
-      "gameType": "Co-op",
+      "gameTypeId": 2,
       "platformId": 3
     },
     {
@@ -134,7 +134,7 @@
       "title": "Fortnite",
       "imageUrl": "https://i.pinimg.com/474x/5b/52/4d/5b524dcc589c3a9f0098884c2ff21d32.jpg",
       "description": "A fast-paced battle royale game",
-      "gameType": "Multiplayer",
+      "gameTypeId": 3,
       "platformId": 1
     },
     {
@@ -143,7 +143,7 @@
       "userId": 5,
       "imageUrl": "https://upload.wikimedia.org/wikipedia/en/e/eb/Cuphead_%28artwork%29.png",
       "description": "A challenging run and gun game",
-      "gameType": "Single Player",
+      "gameTypeId": 1,
       "platformId": 5
     },
     {
@@ -152,7 +152,7 @@
       "title": "Overcooked! 2",
       "imageUrl": "https://cdn1.epicgames.com/salesEvent/salesEvent/egs-overcooked2-tall_1200x1600-fbae89fad70c05cd1979316f620e64a9",
       "description": "A chaotic cooperative cooking game",
-      "gameType": "Co-op",
+      "gameTypeId": 2,
       "platformId": 1
     },
     {
@@ -161,7 +161,7 @@
       "title": "Valheim",
       "imageUrl": "https://preview.redd.it/cb6vhjj30ap61.gif?format=png8&s=7fede5f0fb30bd3aa14dfdb16eb56e8e8412dedc",
       "description": "A Norse-inspired survival game",
-      "gameType": "Multiplayer",
+      "gameTypeId": 3,
       "platformId": 2
     },
     {
@@ -170,7 +170,7 @@
       "title": "Hollow Knight",
       "imageUrl": "https://cdn.displate.com/artwork/857x1200/2025-09-03/c4caa0bc-07c3-40e8-a0dc-17f0efeab192.jpg",
       "description": "A challenging 2D action-adventure game",
-      "gameType": "Single Player",
+      "gameTypeId": 1,
       "platformId": 2
     },
     {
@@ -179,7 +179,7 @@
       "title": "Return to Moria",
       "imageUrl": "https://cdn1.epicgames.com/spt-assets/2ae760629a384d5199cbefc612db7ac8/the-lord-of-the-rings-return-to-moria-tr0c9.png",
       "description": "Explore the Mines of Moria in Lord of the Rings: Return to Moria. Repair statues, collect gems, and gather resources to craft tools and weapons.",
-      "gameType": "Multiplayer",
+      "gameTypeId": 3,
       "platformId": 1
     },
     {
@@ -188,7 +188,7 @@
       "title": "Baldur's Gate 3",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/en/1/12/Baldur%27s_Gate_3_cover_art.jpg",
       "description": "An immersive fantasy RPG with branching storylines",
-      "gameType": "Single Player",
+      "gameTypeId": 1,
       "platformId": 2
     },
     {
@@ -197,7 +197,7 @@
       "title": "For Honor",
       "imageUrl": "https://store.ubisoft.com/on/demandware.static/-/Sites-masterCatalog/default/dw78fb6da2/images/large/659ea90829c01c38968dce19.jpg",
       "description": "A third-person multiplayer melee action game where you battle as the most influential warriors from throughout history",
-      "gameType": "Multiplayer",
+      "gameTypeId": 3,
       "platformId": 1
     },
     {
@@ -206,7 +206,7 @@
       "title": "Hogwarts Legacy",
       "imageUrl": "https://m.media-amazon.com/images/I/61Nm7jqUUSL.jpg",
       "description": "Experience Hogwarts in the 1800s. Your character is a student who holds the key to an ancient secret that threatens to tear the wizarding world apart.",
-      "gameType": "Single Player",
+      "gameTypeId": 1,
       "platformId": 5
     },
     {
@@ -215,7 +215,7 @@
       "title": "Split Fiction",
       "imageUrl": "https://e.snmc.io/lk/g/x/fe06fa5f8ff9f27b8a883df7c94d938e/12818277",
       "description": "Two writers—Mio (sci-fi) and Zoe (fantasy) are trapped in a simulation of their own stories. Players collaborate to escape, navigating mixed genres like cyber-ninjas and fantasy trolls.",
-      "gameType": "Co-op",
+      "gameTypeId": 2,
       "platformId": 4
     },
     {
@@ -224,7 +224,7 @@
       "title": "Sniper Elite: Resistance",
       "imageUrl": "https://images.purexbox.com/ffc8a88799ec6/sniper-elite-resistance-cover.cover_large.jpg",
       "description": "A third-person tactical shooter series centered on stealth-based gameplay, where players control elite OSS sniper Karl Fairburne behind enemy lines during World War II",
-      "gameType": "Single Player",
+      "gameTypeId": 1,
       "platformId": 1
     },
     {
@@ -232,7 +232,7 @@
       "title": "The Witcher 3",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Witcher_3_cover_art.jpg/250px-Witcher_3_cover_art.jpg",
       "description": "You are Geralt of Rivia, a monster slayer known as a Witcher, navigating a war-torn, monster-infested fantasy world inspired by Polish and Slavic mythos.",
-      "gameType": "single player",
+      "gameTypeId": 1,
       "platformId": 1,
       "id": 21
     },
@@ -241,7 +241,7 @@
       "title": "God Of War",
       "imageUrl": "https://i5.walmartimages.com/seo/God-Of-War-Gaming-Poster-Playstation-Game-Cover-Size-24-x-36_0afa8249-ab35-4402-b6fb-c63e89258cb1.00a70bad27a540b20b14408fcafb3081.jpeg",
       "description": "An acclaimed action-adventure franchise following Kratos, a Spartan demigod who battles mythological pantheons",
-      "gameType": "single player",
+      "gameTypeId": 1,
       "platformId": 3,
       "id": 22
     },
@@ -250,7 +250,7 @@
       "title": "Dead By Daylight",
       "imageUrl": "https://cdn1.epicgames.com/spt-assets/2b2299be8ae84d679d4dc57c55af1510/dead-by-daylight-1db3d.jpg",
       "description": "multiplayer horror game where one player takes the role of a savage killer and the other four play as survivors attempting to escape",
-      "gameType": "Multiplayer",
+      "gameTypeId": 3,
       "platformId": 1,
       "id": 23
     },
@@ -259,7 +259,7 @@
       "title": "Paper Mario: The Origami King",
       "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpCL8TIr5kvWil8I6g0cGmbumj24Ocm3Iwlm72THtriN3RPzCHRKclMVgku9SszO6UNa21MA&s=10",
       "description": "a comedy-filled, action-adventure RPG for the Nintendo Switch where Mario and his partner, Olivia, battle the Folded Soldiers to stop King Olly from turning the Mushroom Kingdom into origami",
-      "gameType": "single Player",
+      "gameTypeId": 1,
       "platformId": 5,
       "id": 24
     },
@@ -268,7 +268,7 @@
       "title": "It Takes Two",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/en/a/aa/It_Takes_Two_cover_art.png",
       "description": "A cooperative adventure game for two players",
-      "gameType": "Co-op",
+      "gameTypeId": 2,
       "platformId": 5,
       "id": 25
     },
@@ -277,7 +277,7 @@
       "title": "Hades",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/en/c/cc/Hades_cover_art.jpg",
       "description": "A fast-paced rogue like dungeon crawler",
-      "gameType": "Single Player",
+      "gameTypeId": 1,
       "platformId": 5,
       "id": 26
     },
@@ -286,7 +286,7 @@
       "title": "Among Us",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Among_Us_cover_art.jpg/250px-Among_Us_cover_art.jpg",
       "description": "A social deduction game for groups",
-      "gameType": "Multiplayer",
+      "gameTypeId": 3,
       "platformId": 1,
       "id": 27
     },
@@ -295,7 +295,7 @@
       "title": "Red Dead Redemption II",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/4/44/Red_Dead_Redemption_II.jpg/250px-Red_Dead_Redemption_II.jpg",
       "description": "Players control Arthur Morgan, a senior gun-slinger in the Van der Linde gang struggling to survive against government agents, rival gangs, and internal turmoil",
-      "gameType": "single player",
+      "gameTypeId": 1,
       "platformId": 1,
       "id": 28
     },
@@ -304,7 +304,7 @@
       "title": "For Honor",
       "imageUrl": "https://store.ubisoft.com/on/demandware.static/-/Sites-masterCatalog/default/dw78fb6da2/images/large/659ea90829c01c38968dce19.jpg",
       "description": "A third-person multiplayer melee action game where you battle as the most influential warriors from throughout history",
-      "gameType": "Multiplayer",
+      "gameTypeId": 3,
       "platformId": 1,
       "id": 29
     },
@@ -313,7 +313,7 @@
       "title": "Among Us",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Among_Us_cover_art.jpg/250px-Among_Us_cover_art.jpg",
       "description": "A social deduction game for groups",
-      "gameType": "Multiplayer",
+      "gameTypeId": 3,
       "platformId": 1,
       "id": 30
     },
@@ -322,7 +322,7 @@
       "title": "Among Us",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Among_Us_cover_art.jpg/250px-Among_Us_cover_art.jpg",
       "description": "A social deduction game for groups",
-      "gameType": "Multiplayer",
+      "gameTypeId": 3,
       "platformId": 1,
       "id": 31
     },
@@ -331,7 +331,7 @@
       "title": "Return to Moria",
       "imageUrl": "https://cdn1.epicgames.com/spt-assets/2ae760629a384d5199cbefc612db7ac8/the-lord-of-the-rings-return-to-moria-tr0c9.png",
       "description": "Explore the Mines of Moria in Lord of the Rings: Return to Moria. Repair statues, collect gems, and gather resources to craft tools and weapons.",
-      "gameType": "Multiplayer",
+      "gameTypeId": 3,
       "platformId": 1,
       "id": 32
     },
@@ -340,7 +340,7 @@
       "title": "Return to Moria",
       "imageUrl": "https://cdn1.epicgames.com/spt-assets/2ae760629a384d5199cbefc612db7ac8/the-lord-of-the-rings-return-to-moria-tr0c9.png",
       "description": "Explore the Mines of Moria in Lord of the Rings: Return to Moria. Repair statues, collect gems, and gather resources to craft tools and weapons.",
-      "gameType": "Multiplayer",
+      "gameTypeId": 3,
       "platformId": 1,
       "id": 33
     },
@@ -349,7 +349,7 @@
       "title": "Return to Moria",
       "imageUrl": "https://cdn1.epicgames.com/spt-assets/2ae760629a384d5199cbefc612db7ac8/the-lord-of-the-rings-return-to-moria-tr0c9.png",
       "description": "Explore the Mines of Moria in Lord of the Rings: Return to Moria. Repair statues, collect gems, and gather resources to craft tools and weapons.",
-      "gameType": "Multiplayer",
+      "gameTypeId": 3,
       "platformId": 1,
       "id": 34
     },
@@ -358,7 +358,7 @@
       "title": "Valheim",
       "imageUrl": "https://preview.redd.it/cb6vhjj30ap61.gif?format=png8&s=7fede5f0fb30bd3aa14dfdb16eb56e8e8412dedc",
       "description": "A Norse-inspired survival game",
-      "gameType": "Multiplayer",
+      "gameTypeId": 3,
       "platformId": 2,
       "id": 35
     },
@@ -367,7 +367,7 @@
       "title": "Among Us",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Among_Us_cover_art.jpg/250px-Among_Us_cover_art.jpg",
       "description": "A social deduction game for groups",
-      "gameType": "Multiplayer",
+      "gameTypeId": 3,
       "platformId": 1,
       "id": 36
     },
@@ -376,9 +376,23 @@
       "title": "Among Us",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Among_Us_cover_art.jpg/250px-Among_Us_cover_art.jpg",
       "description": "A social deduction game for groups",
-      "gameType": "Multiplayer",
+      "gameTypeId": 3,
       "platformId": 1,
       "id": 37
+    }
+  ],
+  "gameTypes": [
+    {
+      "id": 1,
+      "type": "Single Player"
+    },
+    {
+      "id": 2,
+      "type": "Co-op"
+    },
+    {
+      "id": 3,
+      "type": "Multiplayer"
     }
   ],
   "favorites": [],

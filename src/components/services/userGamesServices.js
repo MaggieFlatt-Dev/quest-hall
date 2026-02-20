@@ -3,7 +3,7 @@ export const getUsersGamesByUserId = (userId) => {
 }
  
 export const getUsersGameById = (id) => {
-return fetch(`http://localhost:8000/usersGames/${id}?_expand=platform`).then(res => res.json())
+return fetch(`http://localhost:8000/usersGames/${id}?_expand=platform&_expand=gameType`).then(res => res.json())
 }
 
 export const deleteUsersGame = (id) => {
@@ -16,6 +16,7 @@ export const deleteUsersGame = (id) => {
 export const updateUsersGame = (id, editedGame) => {
   const gameToSend = { ...editedGame }
   delete gameToSend.platform
+  delete gameToSend.gameType
 
   return fetch(`http://localhost:8000/usersGames/${id}`, {
     method: "PUT",
