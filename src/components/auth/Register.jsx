@@ -1,9 +1,8 @@
-import { useState } from "react"
-import { useNavigate } from "react-router-dom"
-import { createUser, getUserByEmail } from "../services/userServices"
-import { getUserByUsername } from "../services/userServices"
-
-
+import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { createUser, getUserByEmail } from "../services/userServices";
+import { getUserByUsername } from "../services/userServices";
+import logo from "../../assets/logo.png";
 
 export const Register = (props) => {
   const [user, setUser] = useState({
@@ -11,9 +10,8 @@ export const Register = (props) => {
     lastName: "",
     username: "",
     email: "",
-
-  })
-  let navigate = useNavigate()
+  });
+  let navigate = useNavigate();
 
   const registerNewUser = () => {
     createUser(user).then((createdUser) => {
@@ -22,103 +20,130 @@ export const Register = (props) => {
           "QuestHall_user",
           JSON.stringify({
             id: createdUser.id,
-          })
-        )
+          }),
+        );
 
-        navigate("/")
+        navigate("/login");
       }
-    })
-  }
+    });
+  };
 
   const handleRegister = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     //Check for duplicate email
     getUserByEmail(user.email).then((response) => {
       if (response.length > 0) {
         // Duplicate email? No good.
-        window.alert("Account with that email address already exists")
+        window.alert("Account with that email address already exists");
       } else {
         //Check for duplicate userName
         getUserByUsername(user.username).then((usernameResponse) => {
           if (usernameResponse.length > 0) {
-            window.alert("Username already taken")
+            window.alert("Username already taken");
           } else {
             // Good email and username? Create user.
-            registerNewUser()
+            registerNewUser();
           }
-        })
+        });
       }
-    })
-  }
+    });
+  };
   const updateUser = (evt) => {
-    const copy = { ...user}
-    copy[evt.target.id] = evt.target.value
-    setUser(copy)
-  }
+    const copy = { ...user };
+    copy[evt.target.id] = evt.target.value;
+    setUser(copy);
+  };
 
   return (
-    <main style={{ textAlign: "center" }}>
-      <form className="form-login" onSubmit={handleRegister}>
-        <h1>Quest Hall</h1>
-        <h2>Please Register</h2>
-        <fieldset>
-          <div className="form-group">
-            <input
-              onChange={updateUser}
-              type="text"
-              id="firstName"
-              className="form-control"
-              placeholder="First name"
-              required
-              autoFocus
-            />
+    <main className="bg-darkGray flex min-h-screen items-center justify-center">
+      <section className="w-full max-w-md">
+        <form
+          className="border-olive bg-gray rounded-lg border-2 p-8 shadow-lg"
+          onSubmit={handleRegister}
+        >
+          <img
+            src={logo}
+            alt="Quest Hall Logo"
+            className="logo-primary mx-auto"
+          />
+          <h2 className="text-silver mb-8 text-center text-lg">
+            Create Your Account
+          </h2>
+
+          <fieldset className="mb-4">
+            <div className="form-group">
+              <input
+                onChange={updateUser}
+                type="text"
+                id="firstName"
+                className="input-primary"
+                placeholder="First name"
+                required
+                autoFocus
+              />
+            </div>
+          </fieldset>
+
+          <fieldset className="mb-4">
+            <div className="form-group">
+              <input
+                onChange={updateUser}
+                type="text"
+                id="lastName"
+                className="input-primary"
+                placeholder="Last name"
+                required
+              />
+            </div>
+          </fieldset>
+
+          <fieldset className="mb-4">
+            <div className="form-group">
+              <input
+                onChange={updateUser}
+                type="text"
+                id="username"
+                className="input-primary"
+                placeholder="Create Username"
+                required
+              />
+            </div>
+          </fieldset>
+
+          <fieldset className="mb-6">
+            <div className="form-group">
+              <input
+                onChange={updateUser}
+                type="email"
+                id="email"
+                className="input-primary"
+                placeholder="Email address"
+                required
+              />
+            </div>
+          </fieldset>
+
+          <fieldset className="mb-6">
+            <div>
+              <button className="btn-primary" type="submit">
+                Register
+              </button>
+            </div>
+          </fieldset>
+
+          <div className="text-center">
+            <p className="text-silver">
+              Already have an account?{" "}
+              <Link
+                to="/login"
+                className="text-olive hover:text-darkGreen font-bold underline transition duration-200"
+              >
+                Sign in here
+              </Link>
+            </p>
           </div>
-        </fieldset>
-         <fieldset>
-          <div className="form-group">
-            <input
-              onChange={updateUser}
-              type="text"
-              id="lastName"
-              className="form-control"
-              placeholder="Last name"
-              required
-              autoFocus
-            />
-          </div>
-        </fieldset>
-          <fieldset>
-          <div className="form-group">
-            <input
-              onChange={updateUser}
-              type="email"
-              id="username"
-              className="form-control"
-              placeholder="Create Username"
-              required
-            />
-          </div>
-        </fieldset>
-        <fieldset>
-          <div className="form-group">
-            <input
-              onChange={updateUser}
-              type="email"
-              id="email"
-              className="form-control"
-              placeholder="Email address"
-              required
-            />
-          </div>
-        </fieldset>
-        <fieldset>
-          <div className="form-group">
-            <button className="login-btn btn-info" type="submit">
-              Register
-            </button>
-          </div>
-        </fieldset>
-      </form>
+        </form>
+      </section>
     </main>
-  )
-}
+  );
+};

@@ -1,1 +1,104 @@
-@import "tailwindcss"
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+@import "tailwindcss";
+
+/* Custom theme colors */
+@theme {
+  --color-darkGreen: #22311d;
+  --color-mediumGreen: #3f5a36;
+  --color-olive: #556b2f;
+  --color-silver: #d3d3d3;
+  --color-stone: #818589;
+  --color-darkGray: #2a2a2a;
+  --color-gray: #404040;
+  --color-lightGray: #f5f5f5;
+  --color-offWhite: #f8f8f8;
+  
+  --font-serif: 'Cinzel', serif;
+}
+
+body {
+  @apply font-serif;
+}
+
+
+/*Text outline colors*/
+.text-outline-darkGreen {
+  -webkit-text-stroke: 0.5px #22311d;
+  text-stroke: 0.5px #22311d;
+}
+
+.text-outline-mediumGreen {
+  -webkit-text-stroke: 0.3px #3f5a36;
+  text-stroke: 0.3px #3f5a36;
+}
+
+.text-outline-olive {
+  -webkit-text-stroke: 0.5px #556b2f;
+  text-stroke: 0.5px #556b2f;
+}
+
+.text-outline-silver {
+  -webkit-text-stroke: 0.3px #d3d3d3;
+  text-stroke: 0.3px #d3d3d3;
+}
+
+.text-outline-stone {
+  -webkit-text-stroke: 0.5px #818589;
+  text-stroke: 0.5px #818589;
+}
+
+.text-outline-darkGray {
+  -webkit-text-stroke: 0.3px #2a2a2a;
+  text-stroke: 0.3px #2a2a2a;
+}
+
+.text-outline-lightGray {
+  -webkit-text-stroke: 0.3px #f5f5f5;
+  text-stroke: 0.3px #f5f5f5;
+}
+
+.text-outline-offWhite {
+  -webkit-text-stroke: 0.5px #f8f8f8;
+  text-stroke: 0.5px #f8f8f8;
+}
+
+/*Buttons*/
+.btn-primary {
+    @apply w-full font-serif py-3 px-4 bg-darkGreen text-offWhite border-2 border-darkGreen rounded-md hover:bg-mediumGreen hover:border-mediumGreen transition duration-200 font-bold text-lg;
+  }
+
+  .btn-secondary {
+    @apply w-48 font-serif py-3 px-4 bg-darkGreen text-offWhite border-2 border-darkGreen rounded-md hover:bg-mediumGreen hover:border-mediumGreen transition duration-200 font-bold text-lg shadow-2xl shadow-black/50;
+  }
+  
+  .btn-three {
+    @apply w-48 font-serif py-3 px-4 bg-olive text-offWhite rounded-md hover:bg-mediumGreen transition duration-200 font-bold text-lg;
+  }
+
+   .btn-four {
+    @apply font-serif py-2 px-3 bg-darkGreen text-offWhite border-2 border-darkGreen rounded-md hover:bg-mediumGreen hover:border-mediumGreen transition duration-200 font-bold text-sm;
+  }
+
+  .btn-tavern {
+    @apply relative rounded-t-md rounded-b-lg border-4 border-silver bg-darkGreen px-8 py-16 font-serif font-bold tracking-wider text-offWhite uppercase shadow-2xl shadow-black/50 transition-all duration-150 ease-in-out hover:bg-mediumGreen hover:text-white
+  }
+
+/*Input Fields*/
+.input-primary {
+  @apply w-full font-serif px-4 py-2 border-2 border-stone rounded bg-offWhite text-darkGray focus:outline-none focus:border-olive placeholder-stone;
+}
+
+/*Logo*/
+.logo-primary {
+  @apply w-[400px] h-[330px] mb-4;
+}
+
+.logo-secondary {
+  @apply w-[53px] h-[43px] pl-1;
+}
+
+/*Nav Links*/
+.nav-link {
+  @apply transition duration-200 p-1 rounded-lg transition-shadow duration-300 ease-in-out hover:shadow-lg hover:shadow-black/60 hover:bg-silver hover:text-darkGreen text-silver
+}
