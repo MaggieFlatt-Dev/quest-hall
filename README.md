@@ -144,18 +144,6 @@ quest-hall/
 - **favorites** - Many-to-many relationship for user favorites
 - **taverns** - Tavern/group information
 
-## Styling
-
-Quest Hall uses Tailwind CSS with a medieval/fantasy theme. Custom colors include:
-- **Gold** (#D4AF37) - Accent color
-- **Parchment** (#F3E5AB) - Background/light color
-- **Cream** (#F5F1E8) - accent color
-- **Stone** (#818589) - Secondary color
-- **Rust** (#B7410E) - Accent color
-- **Crimson** (#8B0000) - Secondary color
-- **Iron** (#43464B) - Dark color
-- **Charcoal** (#36393F) - Dark Color
-
 ## Future Enhancements
 
 - Integrate with game database APIs (RAWG, IGDB)
