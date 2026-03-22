@@ -33,7 +33,7 @@ export const EditGame = ({ user }) => {
 
   //handleInputChange - Make a copy of the game object, change one property based on what the user just typed, then save that copy back to state. If the type is radio, convert the value to a number and store it in the property "name"
   const handleInputChange = (event) => {
-    const { name, value, type, id } = event.target;
+    const { name, value, type } = event.target;
     const copy = { ...editedGame };
     if (type === "radio") {
       copy[name] = parseInt(value);
