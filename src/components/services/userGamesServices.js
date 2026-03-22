@@ -13,20 +13,30 @@ export const deleteUsersGame = (id) => {
 }
 
 //need to remove added platform obj from getUsersGameId fetch call
-export const updateUsersGame = (id, editedGame) => {
-  const gameToSend = { ...editedGame }
-  delete gameToSend.platform
-  delete gameToSend.gameType
+// export const updateUsersGame = (id, editedGame) => {
+//   const gameToSend = { ...editedGame }
+//   delete gameToSend.platform
+//   delete gameToSend.gameType
 
+//   return fetch(`http://localhost:8000/usersGames/${id}`, {
+//     method: "PUT",
+//     headers: {
+//       "Content-Type": "application/json",
+//     },
+//     body: JSON.stringify(gameToSend)
+//   })
+// }
+
+// Replace PUT method with PATCH
+export const updateUsersGame = (id, editedGame) => { 
   return fetch(`http://localhost:8000/usersGames/${id}`, {
-    method: "PUT",
+    method: "PATCH",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(gameToSend)
+    body: JSON.stringify(editedGame)
   })
-}
-
+} 
 export const createGame = (newGame) => {
   return fetch(`http://localhost:8000/usersGames`, {
     method: "POST",
