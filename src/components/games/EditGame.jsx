@@ -40,7 +40,7 @@ export const EditGame = ({ user }) => {
     } else if (type === "select-one") {
       copy[name] = parseInt(value);
     } else {
-      copy[id] = value;
+      copy[name] = value;
     }
     setEditedGame(copy);
   };
