@@ -198,7 +198,15 @@
       "imageUrl": "https://store.ubisoft.com/on/demandware.static/-/Sites-masterCatalog/default/dw78fb6da2/images/large/659ea90829c01c38968dce19.jpg",
       "description": "A third-person multiplayer melee action game where you battle as the most influential warriors from throughout history",
       "gameTypeId": 3,
-      "platformId": 1
+      "platformId": 1,
+      "platform": {
+        "id": 1,
+        "name": "PC"
+      },
+      "gameType": {
+        "id": 3,
+        "type": "Multiplayer"
+      }
     },
     {
       "id": 18,
