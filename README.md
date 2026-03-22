@@ -72,7 +72,7 @@ Quest Hall solves this by providing a single, unified platform where users can:
 
 4. **Start JSON Server** (in a separate terminal)
    ```bash
-   npx json-server --watch src/api/database.json --port 8088
+   npx json-server --watch src/api/database.json --port 8000
    ```
 
 5. **Open in browser**
